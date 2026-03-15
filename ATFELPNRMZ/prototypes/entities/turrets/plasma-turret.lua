@@ -1,15 +1,11 @@
 -- prototypes/entities/turrets/plasma-turret.lua
 -- Турель M25 (плазменная турель - ТЯЖЕЛАЯ АРТИЛЛЕРИЯ)
 -- Версия: 1.2 (Rebalance by MechromancerZero)
--- Интеграция: Bob's Warfare Compatibility
 
 local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local sounds = require("__base__.prototypes.entity.sounds")
 
--- ============================================================================
--- ОПРЕДЕЛЕНИЕ АНИМАЦИЙ (из base game laser-turret)
--- ============================================================================
-
+-- АНИМАЦИИ
 local laser_turret_extension = {
     filename = "__base__/graphics/entity/laser-turret/laser-turret-extension.png",
     priority = "high",
@@ -153,10 +149,7 @@ local laser_turret_shooting_glow = {
     }
 }
 
--- ============================================================================
 -- ПРОТОТИП ТУРЕЛИ
--- ============================================================================
-
 data:extend({
     {
         type = "electric-turret",
@@ -167,11 +160,11 @@ data:extend({
         flags = {"placeable-player", "placeable-enemy", "player-creation"},
         minable = {mining_time = 0.5, result = "ATF-m25-turret"},
         fast_replaceable_group = "turret",
-        max_health = 3500,  -- ↑ УВЕЛИЧЕНО (тяжёлая турель)
+        max_health = 3500,
         collision_box = {{-0.8, -0.8}, {0.8, 0.8}},
         selection_box = {{-1.1, -1.1}, {1.1, 1.1}},
         damaged_trigger_effect = hit_effects.entity(),
-        rotation_speed = 0.015,  -- ↓ МЕДЛЕННЫЙ поворот
+        rotation_speed = 0.015,
         preparing_speed = 0.03,
         preparing_sound = sounds.laser_turret_activate,
         folding_sound = sounds.laser_turret_deactivate,
@@ -189,11 +182,9 @@ data:extend({
             type = "electric",
             buffer_capacity = "2500kJ",
             input_flow_limit = "20000kW",
-            drain = "30kW",  -- ↑ ВЫСОКОЕ потребление
+            drain = "30kW",
             usage_priority = "primary-input"
         },
-        
-        -- АНИМАЦИИ
         folded_animation = {
             layers = {
                 laser_turret_extension,
@@ -215,7 +206,7 @@ data:extend({
                 laser_turret_shooting_mask
             }
         },
-        attacking_animation = {  -- ← ДОБАВЛЕНО!
+        attacking_animation = {
             layers = {
                 laser_turret_shooting,
                 laser_turret_shooting_shadow,
@@ -229,8 +220,6 @@ data:extend({
                 laser_turret_extension_mask
             }
         },
-        
-        -- ГРАФИКА (Factorio 2.0 формат)
         graphics_set = {
             base_visualisation = {
                 animation = {
@@ -255,35 +244,32 @@ data:extend({
                     }
                 }
             },
-            animation = {  -- ← ДОБАВЛЕНО!
+            animation = {
                 layers = {
                     laser_turret_shooting,
                     laser_turret_shooting_shadow,
                     laser_turret_shooting_mask
                 }
             },
-            glow = {  -- ← ИСПРАВЛЕНО!
+            glow = {
                 animation = laser_turret_shooting_glow,
                 light = {
-                    intensity = 0.8,  -- ↑ Ярче
+                    intensity = 0.8,
                     size = 15,
-                    color = {r = 1, g = 0.3, b = 0}  -- ОРАНЖЕВОЕ свечение
+                    color = {r = 1, g = 0.3, b = 0}
                 }
             }
         },
-        
         vehicle_impact_sound = sounds.generic_impact,
-        
-        -- ПАРАМЕТРЫ АТАКИ (ИСПРАВЛЕНО - БЕЗ ammo_type!)
         attack_parameters = {
             type = "projectile",
             ammo_category = "plasma40watt",
-            ammo_categories = {"plasma40watt", "plasma"},  -- ← ДОБАВЛЕНО!
-            damage_modifier = 3.5,  -- ↑↑ ВЫСОКИЙ УРОН
-            cooldown = 18,  -- ↑ МЕДЛЕННАЯ скорострельность
+            ammo_categories = {"plasma40watt", "plasma"},
+            damage_modifier = 3.5,
+            cooldown = 18,
             projectile_creation_distance = 1.5,
             projectile_center = {0, 0},
-            range = 40,  -- ↑ МАКСИМАЛЬНЫЙ радиус
+            range = 40,
             min_range = 5,
             sound = {
                 {
@@ -292,7 +278,6 @@ data:extend({
                 }
             }
         },
-        
         turret_base_has_direction = true,
         gun_barrel_length = 0.6,
         call_for_help_radius = 50,
