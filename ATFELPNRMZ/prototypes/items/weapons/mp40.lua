@@ -8,22 +8,22 @@ extend({
     -- mp40: Maschinenpistole 40 (пистолет-пулемёт WW2 эры)
     -- =========================================================================
     {
-        type = "gun",
-        name = "mp40",
-        icon = "__Atlas_ATF__/graphics/weapons/mp40.png",
+        type ="gun",
+        name ="mp40",
+        icon ="__Atlas_ATF__/graphics/weapons/mp40.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "oldarms",
-        order = "a[mp40]",
+        subgroup ="oldarms",
+        order ="a[mp40]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "9mm",
+            type ="projectile",
+            ammo_category ="9mm",
             damage_modifier = 1.4,
             cooldown = 8,
             movement_slow_down_factor = 0.2,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -36,7 +36,7 @@ extend({
             range = 18,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/mp40.ogg",
+                    filename ="__Atlas_ATF__/sound/mp40.ogg",
                     volume = 1.0
                 }
             }

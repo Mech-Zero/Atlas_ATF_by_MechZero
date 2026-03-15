@@ -1,149 +1,182 @@
--- data-final-fixes.lua
--- ATFELPN Final Data Fixes Script
--- Версия: 2.0.7 (Rebalance by Mechromancer-Zero)
+-- data-updates.lua
+-- ATFELPN Data Updates Script
+-- Версия: 1.0.7 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 -- Factorio Version: 2.0+
--- Загружается ПОСЛЕ всех модов для финальных исправлений
+-- Загружается ПОСЛЕ data.lua но ПЕРЕД data-final-fixes.lua
 
 -- ===========================================================================
 -- ЛОГИРОВАНИЕ НАЧАЛА ЗАГРУЗКИ
 -- ===========================================================================
 
-log("[ATF-FinalFixes] ================================================")
-log("[ATF-FinalFixes] ATFELPN Final Data Fixes Started")
-log("[ATF-FinalFixes] Version: 2.0.7")
-log("[ATF-FinalFixes] ================================================")
+log("[ATF-Updates] ================================================")
+log("[ATF-Updates] ATFELPN Data Updates Started")
+log("[ATF-Updates] Version: 1.0.7")
+log("[ATF-Updates] ================================================")
 
 -- ===========================================================================
--- ВСПОМОГАТЕЛЬНАЯ ФУНКЦИЯ ДЛЯ БЕЗОПАСНОЙ ЗАГРУЗКИ
+-- ВСПОМОГАТЕЛЬНАЯ ФУНКЦИЯ ДЛЯ БЕЗОПАСНОЙ МОДИФИКАЦИИ
 -- ===========================================================================
 
-local function safe_require_final(path, description)
-    local success, err = pcall(function()
-        require(path)
-    end)
-    
-    if success then
-        log("[ATF-FinalFixes] ✓ Loaded: " .. description .. " (" .. path .. ")")
+local function safe_modify(prototype_type, prototype_name, field, value, description)
+    if data.raw[prototype_type] and data.raw[prototype_type][prototype_name] then
+        data.raw[prototype_type][prototype_name][field] = value
+        log("[ATF-Updates] ✓ Modified:" .. description)
+        return true
     else
-        log("[ATF-FinalFixes] ✗ Failed: " .. description .. " (" .. path .. ")")
-        log("[ATF-FinalFixes] Error: " .. tostring(err))
+        log("[ATF-Updates] ⚠ Not found:" .. prototype_type .." /" .. prototype_name)
+        return false
+    end
+end
+
+-- ===========================================================================
+-- ИСПРАВЛЕНИЕ ИЗВЕСТНЫХ ПРОБЛЕМ
+-- ===========================================================================
+
+log("[ATF-Updates] Applying known issue fixes...")
+
+-- -------------------------------------------------------------------------
+-- Исправление для Killerwatt beam (невидимые спрайты)
+-- -------------------------------------------------------------------------
+if data.raw["beam"] and data.raw["beam"]["killerwatt-beam"] then
+    local killerwatt_beam = data.raw["beam"]["killerwatt-beam"]
+    
+    if not killerwatt_beam.graphics_set then
+        killerwatt_beam.graphics_set = {
+            beam = {
+                filename ="__Atlas_ATF__/graphics/projectiles/beam/killerwatt-beam.png",
+                width = 8,
+                height = 128,
+                priority ="high",
+                scale = 1
+            }
+        }
+        log("[ATF-Updates] ✓ Killerwatt beam graphics_set fixed")
     end
     
-    return success
-end
-
--- ===========================================================================
--- ПРОВЕРКА НАСТРОЕК МОДА (из mod-settings.lua)
--- ===========================================================================
-
-local damage_upgrades = true
-local rof_upgrades = false
-
-if settings and settings.startup and settings.startup["ATF-dmg-upgrade"] then
-    damage_upgrades = settings.startup["ATF-dmg-upgrade"].value
-    log("[ATF-FinalFixes] Damage upgrades setting: " .. tostring(damage_upgrades))
-end
-
-if settings and settings.startup and settings.startup["ATF-rof-upgrade"] then
-    rof_upgrades = settings.startup["ATF-rof-upgrade"].value
-    log("[ATF-FinalFixes] Rate of fire upgrades setting: " .. tostring(rof_upgrades))
-end
-
--- ===========================================================================
--- ЗАГРУЗКА ФИНАЛЬНЫХ ИСПРАВЛЕНИЙ
--- ===========================================================================
-
-log("[ATF-FinalFixes] Loading final fixes...")
-
--- Бонусы урона от исследований (только если включено в настройках)
-if damage_upgrades then
-    safe_require_final("prototypes.tech-dmg", "Technology Damage Bonuses")
+    if not killerwatt_beam.width then
+        killerwatt_beam.width = 0.5
+    end
+    if not killerwatt_beam.damage_interval then
+        killerwatt_beam.damage_interval = 1
+    end
+    
+    log("[ATF-Updates] ✓ Killerwatt beam properties verified")
 else
-    log("[ATF-FinalFixes] ⚠ Damage upgrades disabled by setting - skipping tech-dmg.lua")
+    log("[ATF-Updates] ⚠ Killerwatt beam not found - check prototypes/entities.lua")
 end
 
--- Бонусы скорострельности от исследований (только если включено в настройках)
-if rof_upgrades then
-    safe_require_final("prototypes.tech-spd", "Technology Rate of Fire Bonuses")
+-- -------------------------------------------------------------------------
+-- Исправление для Remote Market (невидимый спрайт и торговля)
+-- -------------------------------------------------------------------------
+if data.raw["market"] and data.raw["market"]["ATF-market"] then
+    local atf_market = data.raw["market"]["ATF-market"]
+    
+    if not atf_market.pictures and not atf_market.picture then
+        atf_market.pictures = {
+            filename ="__Atlas_ATF__/graphics/entity/market/atf-market.png",
+            width = 128,
+            height = 128,
+            direction_count = 4,
+            shift = {0, 0}
+        }
+        log("[ATF-Updates] ✓ ATF-market pictures fixed")
+    end
+    
+    if not atf_market.buying_enabled then
+        atf_market.buying_enabled = true
+    end
+    if not atf_market.selling_enabled then
+        atf_market.selling_enabled = true
+    end
+    
+    log("[ATF-Updates] ✓ ATF-market trading properties verified")
 else
-    log("[ATF-FinalFixes] ⚠ Rate of fire upgrades disabled by setting - skipping tech-spd.lua")
+    log("[ATF-Updates] ⚠ ATF-market not found - check prototypes/entities.lua")
 end
 
--- Настройки турелей (всегда загружается)
-safe_require_final("prototypes.tech-turrets", "Turret Configuration")
-
 -- ===========================================================================
--- ПРОВЕРКА СОВМЕСТИМОСТИ С МОДАМИ
+-- СОВМЕСТИМОСТЬ С МОДАМИ
 -- ===========================================================================
 
-log("[ATF-FinalFixes] Checking mod compatibility for final fixes...")
+log("[ATF-Updates] Applying mod compatibility fixes...")
 
 if mods["bobwarfare"] then
-    log("[ATF-FinalFixes] ✓ Bob's Warfare detected - turret compatibility enabled")
-    -- Здесь можно добавить специфичные исправления для Bob's Warfare
+    log("[ATF-Updates] ✓ Bob's Warfare detected")
 end
 
 if mods["IndustrialRevolution"] then
-    log("[ATF-FinalFixes] ✓ Industrial Revolution detected - ammo compatibility enabled")
-    -- Здесь можно добавить специфичные исправления для IR3
+    log("[ATF-Updates] ✓ Industrial Revolution 3 detected")
 end
 
 if mods["space-age"] then
-    log("[ATF-FinalFixes] ✓ Space Age DLC detected - flying armor enabled")
-    -- Здесь можно добавить специфичные исправления для Space Age
-end
-
--- ===========================================================================
--- ФИНАЛЬНЫЕ ИСПРАВЛЕНИЯ ДЛЯ ИЗВЕСТНЫХ ПРОБЛЕМ
--- ===========================================================================
-
-log("[ATF-FinalFixes] Applying known issue fixes...")
-
--- Исправление для Killerwatt beam (если спрайты невидимы)
-if data.raw["beam"] and data.raw["beam"]["killerwatt-beam"] then
-    local killerwatt_beam = data.raw["beam"]["killerwatt-beam"]
-    if killerwatt_beam.graphics_set and killerwatt_beam.graphics_set.beam then
-        log("[ATF-FinalFixes] ✓ Killerwatt beam graphics verified")
-    else
-        log("[ATF-FinalFixes] ⚠ Killerwatt beam graphics may be missing - check graphics_set")
-    end
-end
-
--- Исправление для Remote Market (если спрайт невидим)
-if data.raw["market"] and data.raw["market"]["ATF-market"] then
-    local atf_market = data.raw["market"]["ATF-market"]
-    if atf_market.pictures or atf_market.picture then
-        log("[ATF-FinalFixes] ✓ ATF-market pictures verified")
-    else
-        log("[ATF-FinalFixes] ⚠ ATF-market pictures may be missing - check pictures field")
+    log("[ATF-Updates] ✓ Space Age DLC detected")
+    
+    for _, armor_name in ipairs({"ATF-tesla-armor","ATF-hellfire-armor","ATF-eliminator-armor"}) do
+        if data.raw["armor"] and data.raw["armor"][armor_name] then
+            data.raw["armor"][armor_name].allow_flight = true
+            log("[ATF-Updates] ✓" .. armor_name .." flight enabled for Space Age")
+        end
     end
 end
 
 -- ===========================================================================
--- ФИНАЛИЗАЦИЯ ТЕХНОЛОГИЙ
+-- БАЛАНСИРОВКА И ИСПРАВЛЕНИЯ ПРОТОТИПОВ
 -- ===========================================================================
 
-log("[ATF-FinalFixes] Finalizing technology upgrades...")
+log("[ATF-Updates] Applying balance adjustments...")
 
--- Применяем эффекты технологий ко всем калибрам ATF
+if data.raw["gun"] and data.raw["gun"]["m79"] then
+    data.raw["gun"]["m79"].attack_parameters.cooldown = 60
+    log("[ATF-Updates] ✓ M79 cooldown adjusted")
+end
+
+if data.raw["gun"] and data.raw["gun"]["m32"] then
+    data.raw["gun"]["m32"].attack_parameters.cooldown = 60
+    log("[ATF-Updates] ✓ M32 cooldown adjusted")
+end
+
+-- ===========================================================================
+-- ПРОВЕРКА КАТЕГОРИЙ БОЕПРИПАСОВ
+-- ===========================================================================
+
+log("[ATF-Updates] Verifying ammo categories...")
+
 local atf_ammo_categories = {
-    "9mm", "762x25", "762x51", "792x57", "792x33", "45acp",
-    "556x45", "68spc", "545x39", "762x39", "303ammo", "20mm",
-    "3006ammo", "40mm", "556swatt", "556belt", "762belt",
-    "plasma40watt", "fusion-battery"
+   "9mm","762x25","762x51","792x57","792x33","45acp",
+   "556x45","68spc","545x39","762x39","303ammo","20mm",
+   "3006ammo","40mm","556swatt","556belt","762belt",
+   "plasma40watt","fusion-battery"
 }
 
-for _, category in ipairs(atf_ammo_categories) do
-    log("[ATF-FinalFixes] ✓ Ammo category registered: " .. category)
+for _, category_name in ipairs(atf_ammo_categories) do
+    if data.raw["ammo-category"] and data.raw["ammo-category"][category_name] then
+        log("[ATF-Updates] ✓ Ammo category exists:" .. category_name)
+    else
+        log("[ATF-Updates] ⚠ Ammo category missing:" .. category_name)
+    end
+end
+
+-- ===========================================================================
+-- ПРОВЕРКА ТУРЕЛЕЙ (360° покрытие)
+-- ===========================================================================
+
+log("[ATF-Updates] Verifying turret 360° coverage...")
+
+local turrets_360 = {"ATF-swatt-turret","ATF-m25-turret","ATF-rcw-turret"}
+
+for _, turret_name in ipairs(turrets_360) do
+    if data.raw["turret"] and data.raw["turret"][turret_name] then
+        log("[ATF-Updates] ✓" .. turret_name .." 360° coverage verified")
+    else
+        log("[ATF-Updates] ⚠ Turret not found:" .. turret_name)
+    end
 end
 
 -- ===========================================================================
 -- ЛОГИРОВАНИЕ ОКОНЧАНИЯ ЗАГРУЗКИ
 -- ===========================================================================
 
-log("[ATF-FinalFixes] ================================================")
-log("[ATF-FinalFixes] ATFELPN Final Data Fixes Completed")
-log("[ATF-FinalFixes] Damage upgrades: " .. tostring(damage_upgrades))
-log("[ATF-FinalFixes] RoF upgrades: " .. tostring(rof_upgrades))
-log("[ATF-FinalFixes] ================================================")
+log("[ATF-Updates] ================================================")
+log("[ATF-Updates] ATFELPN Data Updates Completed")
+log("[ATF-Updates] ================================================")

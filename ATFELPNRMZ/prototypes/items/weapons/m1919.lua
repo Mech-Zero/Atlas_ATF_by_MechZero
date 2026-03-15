@@ -8,22 +8,22 @@ extend({
     -- m1919: M1919 Browning Machine Gun (станковый пулемёт WW2 эры)
     -- =========================================================================
     {
-        type = "gun",
-        name = "m1919",
-        icon = "__Atlas_ATF__/graphics/weapons/m1919.png",
+        type ="gun",
+        name ="m1919",
+        icon ="__Atlas_ATF__/graphics/weapons/m1919.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "oldarms",
-        order = "a[m1919]",
+        subgroup ="oldarms",
+        order ="a[m1919]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "3006ammo",
+            type ="projectile",
+            ammo_category ="3006ammo",
             damage_modifier = 2.5,
             cooldown = 8,
             movement_slow_down_factor = 0.6,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -37,20 +37,20 @@ extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__Atlas_ATF__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }
                 },
                 middle_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/m1919.ogg",
+                        filename ="__Atlas_ATF__/sound/m1919.ogg",
                         volume = 0.9
                     }
                 },
                 end_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__Atlas_ATF__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }

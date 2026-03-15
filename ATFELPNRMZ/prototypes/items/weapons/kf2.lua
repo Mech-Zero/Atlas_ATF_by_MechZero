@@ -8,17 +8,17 @@ extend({
     -- killerwatt: Лучевая винтовка Killer Watt (электрический луч)
     -- =========================================================================
     {
-        type = "gun",
-        name = "killerwatt",
-        icon = "__Atlas_ATF__/graphics/weapons/killerwatt.png",
+        type ="gun",
+        name ="killerwatt",
+        icon ="__Atlas_ATF__/graphics/weapons/killerwatt.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "conceptarms",
-        order = "g[laser]-a[killerwatt]",
+        subgroup ="conceptarms",
+        order ="g[laser]-a[killerwatt]",
         attack_parameters = {
-            type = "beam",
-            ammo_category = "killerwatt",
+            type ="beam",
+            ammo_category ="killerwatt",
             damage_modifier = 1.4,
             cooldown = 4,
             movement_slow_down_factor = 0.1,
@@ -27,20 +27,20 @@ extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__Atlas_ATF__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }
                 },
                 middle_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/killerwatt.ogg",
+                        filename ="__Atlas_ATF__/sound/killerwatt.ogg",
                         volume = 0.9
                     }
                 },
                 end_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__Atlas_ATF__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }
@@ -54,17 +54,17 @@ extend({
     -- heliosrifle: Плазменная винтовка Helios (плазменный снаряд)
     -- =========================================================================
     {
-        type = "gun",
-        name = "heliosrifle",
-        icon = "__Atlas_ATF__/graphics/weapons/helios.png",
+        type ="gun",
+        name ="heliosrifle",
+        icon ="__Atlas_ATF__/graphics/weapons/helios.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "conceptarms",
-        order = "g[plasma]-a[helios]",
+        subgroup ="conceptarms",
+        order ="g[plasma]-a[helios]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "helios",
+            type ="projectile",
+            ammo_category ="helios",
             damage_modifier = 1.2,
             cooldown = 6,
             movement_slow_down_factor = 0.1,
@@ -73,20 +73,20 @@ extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__Atlas_ATF__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }
                 },
                 middle_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/helios.ogg",
+                        filename ="__Atlas_ATF__/sound/helios.ogg",
                         volume = 0.9
                     }
                 },
                 end_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__Atlas_ATF__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }

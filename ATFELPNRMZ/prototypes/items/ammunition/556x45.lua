@@ -8,39 +8,39 @@ data:extend({
     -- 556x45: Стандартный винтовочный патрон (NATO)
     -- =========================================================================
     {
-        type = "ammo",
-        name = "556x45",
-        icon = "__Atlas_ATF__/graphics/ammo/556x45.png",
+        type ="ammo",
+        name ="556x45",
+        icon ="__Atlas_ATF__/graphics/ammo/556x45.png",
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {"item"},
-        ammo_category = "556x45",
+        ammo_category ="556x45",
         ammo_type = {
-            category = "556x45",
+            category ="556x45",
             action = {
-                type = "direct",
+                type ="direct",
                 action_delivery = {
-                    type = "instant",
+                    type ="instant",
                     source_effects = {
-                        type = "create-explosion",
-                        entity_name = "explosion-gunshot"
+                        type ="create-explosion",
+                        entity_name ="explosion-gunshot"
                     },
                     target_effects = {
                         {
-                            type = "create-entity",
-                            entity_name = "explosion-hit"
+                            type ="create-entity",
+                            entity_name ="explosion-hit"
                         },
                         {
-                            type = "damage",
-                            damage = {amount = 15, type = "physical"}
+                            type ="damage",
+                            damage = {amount = 15, type ="physical"}
                         }
                     }
                 }
             }
         },
         magazine_size = 30,
-        subgroup = "ATF-ammo",
-        order = "a[556x45]",
+        subgroup ="ATF-ammo",
+        order ="a[556x45]",
         stack_size = 200
     },
 
@@ -48,43 +48,43 @@ data:extend({
     -- 556x45drum: Барабанный магазин (5.56x45)
     -- =========================================================================
     {
-        type = "ammo",
-        name = "556x45drum",
-        icon = "__Atlas_ATF__/graphics/ammo/556drum.png",
+        type ="ammo",
+        name ="556x45drum",
+        icon ="__Atlas_ATF__/graphics/ammo/556drum.png",
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {"item"},
-        ammo_category = "556x45",
+        ammo_category ="556x45",
         ammo_type = {
-            category = "556x45",
+            category ="556x45",
             action = {
-                type = "direct",
+                type ="direct",
                 action_delivery = {
-                    type = "instant",
+                    type ="instant",
                     source_effects = {
-                        type = "create-explosion",
-                        entity_name = "explosion-gunshot"
+                        type ="create-explosion",
+                        entity_name ="explosion-gunshot"
                     },
                     target_effects = {
                         {
-                            type = "create-entity",
-                            entity_name = "explosion-hit"
+                            type ="create-entity",
+                            entity_name ="explosion-hit"
                         },
                         {
-                            type = "damage",
-                            damage = {amount = 15, type = "physical"}
+                            type ="damage",
+                            damage = {amount = 15, type ="physical"}
                         },
                         {
-                            type = "damage",
-                            damage = {amount = 4, type = "fire"}
+                            type ="damage",
+                            damage = {amount = 4, type ="fire"}
                         }
                     }
                 }
             }
         },
         magazine_size = 100,
-        subgroup = "ATF-ammo",
-        order = "a[556x45]-b[drum]",
+        subgroup ="ATF-ammo",
+        order ="a[556x45]-b[drum]",
         stack_size = 200
     },
 
@@ -92,39 +92,39 @@ data:extend({
     -- 556-swatt: Электрический патрон (SWATT)
     -- =========================================================================
     {
-        type = "ammo",
-        name = "556-swatt",
-        icon = "__Atlas_ATF__/graphics/ammo/swatt-mag.png",
+        type ="ammo",
+        name ="556-swatt",
+        icon ="__Atlas_ATF__/graphics/ammo/swatt-mag.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        ammo_category = "556-swatt",
+        ammo_category ="556-swatt",
         ammo_type = {
-            category = "556-swatt",
-            target_type = "position",
+            category ="556-swatt",
+            target_type ="position",
             clamp_position = false,
             action = {
                 {
-                    type = "direct",
+                    type ="direct",
                     action_delivery = {
-                        type = "projectile",
-                        projectile = "556-swatt",
+                        type ="projectile",
+                        projectile ="556-swatt",
                         starting_speed = 3,
                         starting_speed_deviation = 0,
                         direction_deviation = 0,
                         range_deviation = 0,
                         max_range = 35,
                         source_effects = {
-                            type = "create-explosion",
-                            entity_name = "explosion-gunshot"
+                            type ="create-explosion",
+                            entity_name ="explosion-gunshot"
                         }
                     }
                 }
             }
         },
         magazine_size = 50,
-        subgroup = "ATF-ammo",
-        order = "a[556x45]-c[swatt]",
+        subgroup ="ATF-ammo",
+        order ="a[556x45]-c[swatt]",
         stack_size = 200
     },
 
@@ -132,37 +132,37 @@ data:extend({
     -- 556belt: Ленточный патрон (ротативная система)
     -- =========================================================================
     {
-        type = "ammo",
-        name = "556belt",
-        icon = "__Atlas_ATF__/graphics/ammo/556belt.png",
+        type ="ammo",
+        name ="556belt",
+        icon ="__Atlas_ATF__/graphics/ammo/556belt.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        ammo_category = "556belt",
+        ammo_category ="556belt",
         ammo_type = {
-            category = "556belt",
-            target_type = "position",
+            category ="556belt",
+            target_type ="position",
             clamp_position = false,
             action = {
-                type = "direct",
+                type ="direct",
                 action_delivery = {
-                    type = "projectile",
-                    projectile = "556belt",
+                    type ="projectile",
+                    projectile ="556belt",
                     starting_speed = 3,
                     starting_speed_deviation = 0,
                     direction_deviation = 0,
                     range_deviation = 0,
                     max_range = 35,
                     source_effects = {
-                        type = "create-explosion",
-                        entity_name = "explosion-gunshot"
+                        type ="create-explosion",
+                        entity_name ="explosion-gunshot"
                     }
                 }
             }
         },
         magazine_size = 200,
-        subgroup = "ATF-ammo",
-        order = "a[556x45]-d[belt]",
+        subgroup ="ATF-ammo",
+        order ="a[556x45]-d[belt]",
         stack_size = 100
     }
 })

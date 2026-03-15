@@ -15,12 +15,12 @@ if not mods["bobores"] then
     
     data:extend({
         {
-            type = "autoplace-control",
-            category = "resource",
-            name = "cinnabar",
+            type ="autoplace-control",
+            category ="resource",
+            name ="cinnabar",
             richness = true,
-            order = "b-g",
-            icon = "__Atlas_ATF__/graphics/items/cinnabar.png",
+            order ="b-g",
+            icon ="__Atlas_ATF__/graphics/items/cinnabar.png",
             icon_size = 64
         }
     })
@@ -40,11 +40,11 @@ end
 if not mods["bobores"] then
     data:extend({
         {
-            type = "autoplace-control",
-            category = "resource",
-            name = "your-resource-name",
+            type ="autoplace-control",
+            category ="resource",
+            name ="your-resource-name",
             richness = true,
-            order = "b-h"
+            order ="b-h"
         }
     })
 end

@@ -8,22 +8,22 @@ extend({
     -- mp5: Heckler & Koch MP5 (пистолет-пулемёт холодной войны)
     -- =========================================================================
     {
-        type = "gun",
-        name = "mp5",
-        icon = "__Atlas_ATF__/graphics/weapons/mp5.png",
+        type ="gun",
+        name ="mp5",
+        icon ="__Atlas_ATF__/graphics/weapons/mp5.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "coldwararms",
-        order = "a[mp5]",
+        subgroup ="coldwararms",
+        order ="a[mp5]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "9mm",
+            type ="projectile",
+            ammo_category ="9mm",
             damage_modifier = 1.8,
             cooldown = 5,
             movement_slow_down_factor = 0.1,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -36,7 +36,7 @@ extend({
             range = 20,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/mp5.ogg",
+                    filename ="__Atlas_ATF__/sound/mp5.ogg",
                     volume = 1.0
                 }
             }

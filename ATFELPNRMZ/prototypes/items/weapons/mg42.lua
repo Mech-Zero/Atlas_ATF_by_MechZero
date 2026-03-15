@@ -2,23 +2,23 @@ data:extend
 ({
 -- mg42
   {
-    type = "gun",
+    type ="gun",
 	icon_size = 128, 
-    name = "mg42",
-    icon = "__Atlas_ATF__/graphics/weapons/mg42.png",
+    name ="mg42",
+    icon ="__Atlas_ATF__/graphics/weapons/mg42.png",
     
-    subgroup = "oldarms",
-    order = "a[mg42]",
+    subgroup ="oldarms",
+    order ="a[mg42]",
     attack_parameters =
     {
-      type = "projectile",
-      ammo_category = "792x57",
+      type ="projectile",
+      ammo_category ="792x57",
 			damage_modifier = 2.2,
       cooldown = 4,
       movement_slow_down_factor = 0.7,
       shell_particle =
       {
-        name = "shell-particle",
+        name ="shell-particle",
         direction_deviation = 0.1,
         speed = 0.1,
         speed_deviation = 0.03,
@@ -32,7 +32,7 @@ data:extend
 			 	 sound =
 		 	 {
 		 	    {
-		 	      filename = "__Atlas_ATF__/sound/mg42.ogg",
+		 	      filename ="__Atlas_ATF__/sound/mg42.ogg",
 		   	    volume = 0.9
 		 	    }
 		   }

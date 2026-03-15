@@ -9,12 +9,12 @@
 
 -- Добавляем базовые турели в группу замены
 if data.raw["ammo-turret"]["gun-turret"] then
-    data.raw["ammo-turret"]["gun-turret"].fast_replaceable_group = "turret"
+    data.raw["ammo-turret"]["gun-turret"].fast_replaceable_group ="turret"
     log("[ATF-Rebalance] Gun turret fast_replaceable_group set")
 end
 
 if data.raw["electric-turret"]["laser-turret"] then
-    data.raw["electric-turret"]["laser-turret"].fast_replaceable_group = "turret"
+    data.raw["electric-turret"]["laser-turret"].fast_replaceable_group ="turret"
     log("[ATF-Rebalance] Laser turret fast_replaceable_group set")
 end
 
@@ -26,7 +26,7 @@ end
 local function safe_require(path)
     local ok, err = pcall(function() require(path) end)
     if not ok then
-        log("[ATF-Rebalance] Warning: " .. path .. " not found")
+        log("[ATF-Rebalance] Warning:" .. path .." not found")
     end
     return ok
 end
@@ -52,20 +52,20 @@ if mods["bobwarfare"] then
     -- Настройка групп замены для турелей Bob's
     local bob_turrets = {
         ["ammo-turret"] = {
-            "bob-machine-gun-turret",
-            "bob-flamethrower-turret",
-            "bob-artillery-turret"
+           "bob-machine-gun-turret",
+           "bob-flamethrower-turret",
+           "bob-artillery-turret"
         },
         ["electric-turret"] = {
-            "bob-laser-turret"
+           "bob-laser-turret"
         }
     }
     
     for turret_type, turret_list in pairs(bob_turrets) do
         for _, turret_name in pairs(turret_list) do
             if data.raw[turret_type][turret_name] then
-                data.raw[turret_type][turret_name].fast_replaceable_group = "turret"
-                log("[ATF-Rebalance] Bob's turret " .. turret_name .. " added to replaceable group")
+                data.raw[turret_type][turret_name].fast_replaceable_group ="turret"
+                log("[ATF-Rebalance] Bob's turret" .. turret_name .." added to replaceable group")
             end
         end
     end

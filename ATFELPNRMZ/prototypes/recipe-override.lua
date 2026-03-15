@@ -73,7 +73,7 @@ if mods["bobplates"] and mods["bobmetal"] then
     -- ATF-plasma-cell: Плазма-ячейка с водородом
     data.raw.recipe["ATF-plasma-cell"].ingredients = {
         {"plastic-bar", 2},
-        {type = "fluid", name = "hydrogen", amount = 40},
+        {type ="fluid", name ="hydrogen", amount = 40},
         {"zinc-plate", 1},
         {"silver-plate", 1}
     }
@@ -155,7 +155,7 @@ if mods["bobplates"] and mods["bobmetal"] then
     -- ATF-gold: Золотая пластина + Серная кислота
     data.raw.recipe["ATF-gold"].ingredients = {
         {"gold-plate", 10},
-        {type = "fluid", name = "sulfuric-acid", amount = 50}
+        {type ="fluid", name ="sulfuric-acid", amount = 50}
     }
 
     -- ATF-gembox: Драгоценные камни Bob's
@@ -190,7 +190,7 @@ if mods["IndustrialRevolution3"] then
     -- ATF-gold: IR3 использует gold-ingot вместо gold-plate
     data.raw.recipe["ATF-gold"].ingredients = {
         {"gold-ingot", 10},
-        {type = "fluid", name = "sulfuric-acid", amount = 50}
+        {type ="fluid", name ="sulfuric-acid", amount = 50}
     }
 
     -- ATF-gembox: IR3 использует другие названия камней

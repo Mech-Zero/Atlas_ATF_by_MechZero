@@ -8,22 +8,22 @@ extend({
     -- akm: Kalashnikov AKM (автомат холодной войны)
     -- =========================================================================
     {
-        type = "gun",
-        name = "akm",
-        icon = "__Atlas_ATF__/graphics/weapons/akm.png",
+        type ="gun",
+        name ="akm",
+        icon ="__Atlas_ATF__/graphics/weapons/akm.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "coldwararms",
-        order = "a[akm]",
+        subgroup ="coldwararms",
+        order ="a[akm]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "762x39",
+            type ="projectile",
+            ammo_category ="762x39",
             damage_modifier = 2.0,
             cooldown = 8,
             movement_slow_down_factor = 0.35,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -36,7 +36,7 @@ extend({
             range = 25,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/ak74m.ogg",
+                    filename ="__Atlas_ATF__/sound/ak74m.ogg",
                     volume = 1.0
                 }
             }

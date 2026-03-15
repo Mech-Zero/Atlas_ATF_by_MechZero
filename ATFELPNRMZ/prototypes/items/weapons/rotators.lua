@@ -8,22 +8,22 @@ extend({
     -- deathmachine: Death Machine (ротативная пушка 7.62mm)
     -- =========================================================================
     {
-        type = "gun",
-        name = "deathmachine",
-        icon = "__Atlas_ATF__/graphics/weapons/deathmachine.png",
+        type ="gun",
+        name ="deathmachine",
+        icon ="__Atlas_ATF__/graphics/weapons/deathmachine.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "conceptarms",
-        order = "c[rot]-c[deathmachine]",
+        subgroup ="conceptarms",
+        order ="c[rot]-c[deathmachine]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "762belt",
+            type ="projectile",
+            ammo_category ="762belt",
             damage_modifier = 2.6,
             cooldown = 6,
             movement_slow_down_factor = 0.6,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.3,
                 speed = 0.5,
                 speed_deviation = 0.3,
@@ -37,20 +37,20 @@ extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/minigun-begin.ogg",
+                        filename ="__Atlas_ATF__/sound/minigun-begin.ogg",
                         volume = 0.5,
                         speed = 1
                     }
                 },
                 middle_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/deathmachine.ogg",
+                        filename ="__Atlas_ATF__/sound/deathmachine.ogg",
                         volume = 1.0
                     }
                 },
                 end_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/minigun-stop.ogg",
+                        filename ="__Atlas_ATF__/sound/minigun-stop.ogg",
                         volume = 0.5,
                         speed = 1
                     }
@@ -64,22 +64,22 @@ extend({
     -- m134: M134 Minigun (ротативная пушка 5.56mm)
     -- =========================================================================
     {
-        type = "gun",
-        name = "m134",
-        icon = "__Atlas_ATF__/graphics/weapons/m134.png",
+        type ="gun",
+        name ="m134",
+        icon ="__Atlas_ATF__/graphics/weapons/m134.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "conceptarms",
-        order = "c[rot]-b[m134]",
+        subgroup ="conceptarms",
+        order ="c[rot]-b[m134]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "556belt",
+            type ="projectile",
+            ammo_category ="556belt",
             damage_modifier = 2.5,
             cooldown = 5,
             movement_slow_down_factor = 0.6,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.3,
                 speed = 0.6,
                 speed_deviation = 0.3,
@@ -93,20 +93,20 @@ extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/minigun-begin.ogg",
+                        filename ="__Atlas_ATF__/sound/minigun-begin.ogg",
                         volume = 0.5,
                         speed = 1
                     }
                 },
                 middle_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/minigun-middle.ogg",
+                        filename ="__Atlas_ATF__/sound/minigun-middle.ogg",
                         volume = 1.0
                     }
                 },
                 end_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/minigun-stop.ogg",
+                        filename ="__Atlas_ATF__/sound/minigun-stop.ogg",
                         volume = 0.5,
                         speed = 1
                     }
@@ -120,22 +120,22 @@ extend({
     -- gau: GAU Rotator (ротативная пушка 20mm)
     -- =========================================================================
     {
-        type = "gun",
-        name = "gau",
-        icon = "__Atlas_ATF__/graphics/weapons/gau.png",
+        type ="gun",
+        name ="gau",
+        icon ="__Atlas_ATF__/graphics/weapons/gau.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "conceptarms",
-        order = "c[rot]-d[gau]",
+        subgroup ="conceptarms",
+        order ="c[rot]-d[gau]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "20mm",
+            type ="projectile",
+            ammo_category ="20mm",
             damage_modifier = 3.0,
             cooldown = 8,
             movement_slow_down_factor = 0.65,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.3,
                 speed = 0.4,
                 speed_deviation = 0.3,
@@ -149,20 +149,20 @@ extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/minigun-begin.ogg",
+                        filename ="__Atlas_ATF__/sound/minigun-begin.ogg",
                         volume = 0.5,
                         speed = 1
                     }
                 },
                 middle_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/gau.ogg",
+                        filename ="__Atlas_ATF__/sound/gau.ogg",
                         volume = 1.5
                     }
                 },
                 end_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/minigun-stop.ogg",
+                        filename ="__Atlas_ATF__/sound/minigun-stop.ogg",
                         volume = 0.5,
                         speed = 1
                     }

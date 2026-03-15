@@ -8,22 +8,22 @@ extend({
     -- m2: M2 Browning Heavy Machine Gun (тяжёлый пулемёт)
     -- =========================================================================
     {
-        type = "gun",
-        name = "m2",
-        icon = "__Atlas_ATF__/graphics/weapons/m2.png",
+        type ="gun",
+        name ="m2",
+        icon ="__Atlas_ATF__/graphics/weapons/m2.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "modernarms",
-        order = "a[m2]",
+        subgroup ="modernarms",
+        order ="a[m2]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "50bmg",
+            type ="projectile",
+            ammo_category ="50bmg",
             damage_modifier = 2.2,
             cooldown = 10,
             movement_slow_down_factor = 0.60,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -37,20 +37,20 @@ extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__Atlas_ATF__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }
                 },
                 middle_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/m2.ogg",
+                        filename ="__Atlas_ATF__/sound/m2.ogg",
                         volume = 0.9
                     }
                 },
                 end_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__Atlas_ATF__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }

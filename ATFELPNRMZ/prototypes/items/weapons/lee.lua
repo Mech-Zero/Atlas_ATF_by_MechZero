@@ -8,22 +8,22 @@ extend({
     -- lee: Lee-Enfield (болтовая винтовка WW1/WW2 эры)
     -- =========================================================================
     {
-        type = "gun",
-        name = "lee",
-        icon = "__Atlas_ATF__/graphics/weapons/lee.png",
+        type ="gun",
+        name ="lee",
+        icon ="__Atlas_ATF__/graphics/weapons/lee.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "oldarms",
-        order = "a[lee]",
+        subgroup ="oldarms",
+        order ="a[lee]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "303ammo",
+            type ="projectile",
+            ammo_category ="303ammo",
             damage_modifier = 4.0,
             cooldown = 60,
             movement_slow_down_factor = 0.7,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -36,7 +36,7 @@ extend({
             range = 35,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/k98.ogg",
+                    filename ="__Atlas_ATF__/sound/k98.ogg",
                     volume = 0.9
                 }
             }

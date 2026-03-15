@@ -8,17 +8,17 @@ extend({
     -- m79: M79 Grenade Launcher (одиночный гранатомёт холодной войны)
     -- =========================================================================
     {
-        type = "gun",
-        name = "m79",
-        icon = "__Atlas_ATF__/graphics/weapons/m79.png",
+        type ="gun",
+        name ="m79",
+        icon ="__Atlas_ATF__/graphics/weapons/m79.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "coldwararms",
-        order = "h[grenade]-a[m79]",
+        subgroup ="coldwararms",
+        order ="h[grenade]-a[m79]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "40mm",
+            type ="projectile",
+            ammo_category ="40mm",
             damage_modifier = 1.5,
             cooldown = 90,
             movement_slow_down_factor = 0.2,
@@ -26,7 +26,7 @@ extend({
             range = 40,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/m79.ogg",
+                    filename ="__Atlas_ATF__/sound/m79.ogg",
                     volume = 0.5
                 }
             }
@@ -38,17 +38,17 @@ extend({
     -- m32: M32 MGL (револьверный гранатомёт современности)
     -- =========================================================================
     {
-        type = "gun",
-        name = "m32",
-        icon = "__Atlas_ATF__/graphics/weapons/m32.png",
+        type ="gun",
+        name ="m32",
+        icon ="__Atlas_ATF__/graphics/weapons/m32.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "modernarms",
-        order = "h[grenade]-b[m32]",
+        subgroup ="modernarms",
+        order ="h[grenade]-b[m32]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "40mm",
+            type ="projectile",
+            ammo_category ="40mm",
             damage_modifier = 1.8,
             cooldown = 45,
             movement_slow_down_factor = 0.4,
@@ -56,7 +56,7 @@ extend({
             range = 45,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/mgl.ogg",
+                    filename ="__Atlas_ATF__/sound/mgl.ogg",
                     volume = 0.5
                 }
             }
@@ -68,17 +68,17 @@ extend({
     -- warmachine: War Machine (автоматический гранатомёт концепта)
     -- =========================================================================
     {
-        type = "gun",
-        name = "warmachine",
-        icon = "__Atlas_ATF__/graphics/weapons/warmachine.png",
+        type ="gun",
+        name ="warmachine",
+        icon ="__Atlas_ATF__/graphics/weapons/warmachine.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "conceptarms",
-        order = "h[grenade]-c[warmachine]",
+        subgroup ="conceptarms",
+        order ="h[grenade]-c[warmachine]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "40mm",
+            type ="projectile",
+            ammo_category ="40mm",
             damage_modifier = 2.2,
             cooldown = 12,
             movement_slow_down_factor = 0.4,
@@ -86,7 +86,7 @@ extend({
             range = 50,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/glmg.ogg",
+                    filename ="__Atlas_ATF__/sound/glmg.ogg",
                     volume = 1.2
                 }
             }

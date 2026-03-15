@@ -12,19 +12,19 @@ extend({
     -- c96: Mauser C96 (пистолет WW1 эры)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "c96",
-        category = "crafting",
+        type ="recipe",
+        name ="c96",
+        category ="crafting",
         energy_required = 5,
         enabled = true,
         ingredients = {
-            {type = "item", name = "ATF-pistol-grip", amount = 1},
-            {type = "item", name = "ATF-pistol-frame-metal", amount = 1},
-            {type = "item", name = "ATF-pistol-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1}
+            {type ="item", name ="ATF-pistol-grip", amount = 1},
+            {type ="item", name ="ATF-pistol-frame-metal", amount = 1},
+            {type ="item", name ="ATF-pistol-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1}
         },
         results = {
-            {type = "item", name = "c96", amount = 1}
+            {type ="item", name ="c96", amount = 1}
         }
     },
 
@@ -32,19 +32,19 @@ extend({
     -- p60: P60 Concept Pistol (концепт-пистолет)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "p60",
-        category = "crafting",
+        type ="recipe",
+        name ="p60",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-pistol-grip", amount = 1},
-            {type = "item", name = "ATF-pistol-frame-modern", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-pistol-barrel", amount = 1}
+            {type ="item", name ="ATF-pistol-grip", amount = 1},
+            {type ="item", name ="ATF-pistol-frame-modern", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-pistol-barrel", amount = 1}
         },
         results = {
-            {type = "item", name = "p60", amount = 1}
+            {type ="item", name ="p60", amount = 1}
         }
     },
 
@@ -52,20 +52,20 @@ extend({
     -- glock: Glock 17/19 (современный пистолет)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "glock",
-        category = "crafting",
+        type ="recipe",
+        name ="glock",
+        category ="crafting",
         energy_required = 8,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-pistol-grip", amount = 1},
-            {type = "item", name = "ATF-pistol-frame-modern", amount = 1},
-            {type = "item", name = "ATF-pistol-slide", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-pistol-barrel", amount = 1}
+            {type ="item", name ="ATF-pistol-grip", amount = 1},
+            {type ="item", name ="ATF-pistol-frame-modern", amount = 1},
+            {type ="item", name ="ATF-pistol-slide", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-pistol-barrel", amount = 1}
         },
         results = {
-            {type = "item", name = "glock", amount = 1}
+            {type ="item", name ="glock", amount = 1}
         }
     },
 
@@ -73,20 +73,20 @@ extend({
     -- 1911: Colt 1911 (классический пистолет)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "1911",
-        category = "crafting",
+        type ="recipe",
+        name ="1911",
+        category ="crafting",
         energy_required = 8,
         enabled = true,
         ingredients = {
-            {type = "item", name = "ATF-pistol-grip", amount = 1},
-            {type = "item", name = "ATF-pistol-slide", amount = 1},
-            {type = "item", name = "ATF-pistol-frame-metal", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-pistol-barrel", amount = 1}
+            {type ="item", name ="ATF-pistol-grip", amount = 1},
+            {type ="item", name ="ATF-pistol-slide", amount = 1},
+            {type ="item", name ="ATF-pistol-frame-metal", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-pistol-barrel", amount = 1}
         },
         results = {
-            {type = "item", name = "1911", amount = 1}
+            {type ="item", name ="1911", amount = 1}
         }
     },
 
@@ -98,20 +98,20 @@ extend({
     -- akm: AKM (советский автомат)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "akm",
-        category = "crafting",
+        type ="recipe",
+        name ="akm",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-wooden-stock", amount = 1},
-            {type = "item", name = "ATF-rifle-grip", amount = 1},
-            {type = "item", name = "ATF-short-rifle-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-auto-receiver", amount = 1}
+            {type ="item", name ="ATF-wooden-stock", amount = 1},
+            {type ="item", name ="ATF-rifle-grip", amount = 1},
+            {type ="item", name ="ATF-short-rifle-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-auto-receiver", amount = 1}
         },
         results = {
-            {type = "item", name = "akm", amount = 1}
+            {type ="item", name ="akm", amount = 1}
         }
     },
 
@@ -119,20 +119,20 @@ extend({
     -- ak74m: AK-74M (модернизированный советский автомат)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "ak74m",
-        category = "crafting",
+        type ="recipe",
+        name ="ak74m",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-poly-stock", amount = 1},
-            {type = "item", name = "ATF-poly-rifle-grip", amount = 1},
-            {type = "item", name = "ATF-short-rifle-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-auto-receiver", amount = 1}
+            {type ="item", name ="ATF-poly-stock", amount = 1},
+            {type ="item", name ="ATF-poly-rifle-grip", amount = 1},
+            {type ="item", name ="ATF-short-rifle-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-auto-receiver", amount = 1}
         },
         results = {
-            {type = "item", name = "ak74m", amount = 1}
+            {type ="item", name ="ak74m", amount = 1}
         }
     },
 
@@ -140,20 +140,20 @@ extend({
     -- m4a1: M4A1 (американский карабин)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "m4a1",
-        category = "crafting",
+        type ="recipe",
+        name ="m4a1",
+        category ="crafting",
         energy_required = 15,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-poly-stock", amount = 1},
-            {type = "item", name = "ATF-poly-rifle-grip", amount = 1},
-            {type = "item", name = "ATF-short-rifle-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-powerful-receiver", amount = 1}
+            {type ="item", name ="ATF-poly-stock", amount = 1},
+            {type ="item", name ="ATF-poly-rifle-grip", amount = 1},
+            {type ="item", name ="ATF-short-rifle-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-powerful-receiver", amount = 1}
         },
         results = {
-            {type = "item", name = "m4a1", amount = 1}
+            {type ="item", name ="m4a1", amount = 1}
         }
     },
 
@@ -161,20 +161,20 @@ extend({
     -- hk416: H&K 416 (немецкий автомат)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "hk416",
-        category = "crafting",
+        type ="recipe",
+        name ="hk416",
+        category ="crafting",
         energy_required = 14,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-poly-stock", amount = 1},
-            {type = "item", name = "ATF-poly-rifle-grip", amount = 1},
-            {type = "item", name = "ATF-short-rifle-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-powerful-receiver", amount = 1}
+            {type ="item", name ="ATF-poly-stock", amount = 1},
+            {type ="item", name ="ATF-poly-rifle-grip", amount = 1},
+            {type ="item", name ="ATF-short-rifle-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-powerful-receiver", amount = 1}
         },
         results = {
-            {type = "item", name = "hk416", amount = 1}
+            {type ="item", name ="hk416", amount = 1}
         }
     },
 
@@ -182,20 +182,20 @@ extend({
     -- acr: ACR (американский автомат)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "acr",
-        category = "crafting",
+        type ="recipe",
+        name ="acr",
+        category ="crafting",
         energy_required = 15,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-poly-stock", amount = 1},
-            {type = "item", name = "ATF-poly-rifle-grip", amount = 1},
-            {type = "item", name = "ATF-short-rifle-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-powerful-receiver", amount = 1}
+            {type ="item", name ="ATF-poly-stock", amount = 1},
+            {type ="item", name ="ATF-poly-rifle-grip", amount = 1},
+            {type ="item", name ="ATF-short-rifle-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-powerful-receiver", amount = 1}
         },
         results = {
-            {type = "item", name = "acr", amount = 1}
+            {type ="item", name ="acr", amount = 1}
         }
     },
 
@@ -207,20 +207,20 @@ extend({
     -- mp5: H&K MP5 (немецкий ПП)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "mp5",
-        category = "crafting",
+        type ="recipe",
+        name ="mp5",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-smg-receiver-modern", amount = 1},
-            {type = "item", name = "ATF-smg-barrel", amount = 1},
-            {type = "item", name = "ATF-poly-stock", amount = 1},
-            {type = "item", name = "ATF-poly-rifle-grip", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1}
+            {type ="item", name ="ATF-smg-receiver-modern", amount = 1},
+            {type ="item", name ="ATF-smg-barrel", amount = 1},
+            {type ="item", name ="ATF-poly-stock", amount = 1},
+            {type ="item", name ="ATF-poly-rifle-grip", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1}
         },
         results = {
-            {type = "item", name = "mp5", amount = 1}
+            {type ="item", name ="mp5", amount = 1}
         }
     },
 
@@ -228,20 +228,20 @@ extend({
     -- vector: KRISS Vector (американский ПП)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "vector",
-        category = "crafting",
+        type ="recipe",
+        name ="vector",
+        category ="crafting",
         energy_required = 20,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-smg-receiver-modern", amount = 1},
-            {type = "item", name = "ATF-smg-barrel", amount = 1},
-            {type = "item", name = "ATF-poly-stock", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-poly-rifle-grip", amount = 1}
+            {type ="item", name ="ATF-smg-receiver-modern", amount = 1},
+            {type ="item", name ="ATF-smg-barrel", amount = 1},
+            {type ="item", name ="ATF-poly-stock", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-poly-rifle-grip", amount = 1}
         },
         results = {
-            {type = "item", name = "vector", amount = 1}
+            {type ="item", name ="vector", amount = 1}
         }
     },
 
@@ -249,20 +249,20 @@ extend({
     -- m1928: Thompson M1928 (американский ПП)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "m1928",
-        category = "crafting",
+        type ="recipe",
+        name ="m1928",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-smg-receiver-milled", amount = 1},
-            {type = "item", name = "ATF-smg-barrel", amount = 1},
-            {type = "item", name = "ATF-wooden-stock", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-pistol-grip", amount = 1}
+            {type ="item", name ="ATF-smg-receiver-milled", amount = 1},
+            {type ="item", name ="ATF-smg-barrel", amount = 1},
+            {type ="item", name ="ATF-wooden-stock", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-pistol-grip", amount = 1}
         },
         results = {
-            {type = "item", name = "m1928", amount = 1}
+            {type ="item", name ="m1928", amount = 1}
         }
     },
 
@@ -270,19 +270,19 @@ extend({
     -- ppsh: ППШ-41 (советский ПП)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "ppsh",
-        category = "crafting",
+        type ="recipe",
+        name ="ppsh",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-smg-receiver-stamped", amount = 1},
-            {type = "item", name = "ATF-smg-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-wooden-stock", amount = 1}
+            {type ="item", name ="ATF-smg-receiver-stamped", amount = 1},
+            {type ="item", name ="ATF-smg-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-wooden-stock", amount = 1}
         },
         results = {
-            {type = "item", name = "ppsh", amount = 1}
+            {type ="item", name ="ppsh", amount = 1}
         }
     },
 
@@ -290,20 +290,20 @@ extend({
     -- mp40: MP40 (немецкий ПП)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "mp40",
-        category = "crafting",
+        type ="recipe",
+        name ="mp40",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-smg-receiver-stamped", amount = 1},
-            {type = "item", name = "ATF-smg-barrel", amount = 1},
-            {type = "item", name = "ATF-metal-stock", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-pistol-grip", amount = 1}
+            {type ="item", name ="ATF-smg-receiver-stamped", amount = 1},
+            {type ="item", name ="ATF-smg-barrel", amount = 1},
+            {type ="item", name ="ATF-metal-stock", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-pistol-grip", amount = 1}
         },
         results = {
-            {type = "item", name = "mp40", amount = 1}
+            {type ="item", name ="mp40", amount = 1}
         }
     },
 
@@ -311,19 +311,19 @@ extend({
     -- mp18: MP18 Bergmann (немецкий ПП WW1)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "mp18",
-        category = "crafting",
+        type ="recipe",
+        name ="mp18",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-smg-receiver-milled", amount = 1},
-            {type = "item", name = "ATF-smg-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-wooden-stock", amount = 1}
+            {type ="item", name ="ATF-smg-receiver-milled", amount = 1},
+            {type ="item", name ="ATF-smg-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-wooden-stock", amount = 1}
         },
         results = {
-            {type = "item", name = "mp18", amount = 1}
+            {type ="item", name ="mp18", amount = 1}
         }
     },
 
@@ -335,20 +335,20 @@ extend({
     -- stg44: STG44 (немецкий автомат WW2)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "stg44",
-        category = "crafting",
+        type ="recipe",
+        name ="stg44",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-wooden-stock", amount = 1},
-            {type = "item", name = "ATF-rifle-grip", amount = 1},
-            {type = "item", name = "ATF-short-rifle-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-auto-receiver", amount = 1}
+            {type ="item", name ="ATF-wooden-stock", amount = 1},
+            {type ="item", name ="ATF-rifle-grip", amount = 1},
+            {type ="item", name ="ATF-short-rifle-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-auto-receiver", amount = 1}
         },
         results = {
-            {type = "item", name = "stg44", amount = 1}
+            {type ="item", name ="stg44", amount = 1}
         }
     },
 
@@ -356,20 +356,20 @@ extend({
     -- g3: H&K G3 (немецкая винтовка холодной войны)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "g3",
-        category = "crafting",
+        type ="recipe",
+        name ="g3",
+        category ="crafting",
         energy_required = 15,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-poly-stock", amount = 1},
-            {type = "item", name = "ATF-rifle-grip", amount = 1},
-            {type = "item", name = "ATF-short-rifle-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-auto-receiver", amount = 1}
+            {type ="item", name ="ATF-poly-stock", amount = 1},
+            {type ="item", name ="ATF-rifle-grip", amount = 1},
+            {type ="item", name ="ATF-short-rifle-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-auto-receiver", amount = 1}
         },
         results = {
-            {type = "item", name = "g3", amount = 1}
+            {type ="item", name ="g3", amount = 1}
         }
     },
 
@@ -377,20 +377,20 @@ extend({
     -- stg60: STG60 (концепт-винтовка)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "stg60",
-        category = "crafting",
+        type ="recipe",
+        name ="stg60",
+        category ="crafting",
         energy_required = 15,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-poly-stock", amount = 1},
-            {type = "item", name = "ATF-powerful-receiver", amount = 1},
-            {type = "item", name = "ATF-rifle-grip", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-short-rifle-barrel", amount = 1}
+            {type ="item", name ="ATF-poly-stock", amount = 1},
+            {type ="item", name ="ATF-powerful-receiver", amount = 1},
+            {type ="item", name ="ATF-rifle-grip", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-short-rifle-barrel", amount = 1}
         },
         results = {
-            {type = "item", name = "stg60", amount = 1}
+            {type ="item", name ="stg60", amount = 1}
         }
     },
 
@@ -398,18 +398,18 @@ extend({
     -- k98: Karabiner 98k (немецкая болтовая винтовка)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "k98",
-        category = "crafting",
+        type ="recipe",
+        name ="k98",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-wooden-stock", amount = 1},
-            {type = "item", name = "ATF-bolt-receiver", amount = 1},
-            {type = "item", name = "ATF-long-rifle-barrel", amount = 1}
+            {type ="item", name ="ATF-wooden-stock", amount = 1},
+            {type ="item", name ="ATF-bolt-receiver", amount = 1},
+            {type ="item", name ="ATF-long-rifle-barrel", amount = 1}
         },
         results = {
-            {type = "item", name = "k98", amount = 1}
+            {type ="item", name ="k98", amount = 1}
         }
     },
 
@@ -417,18 +417,18 @@ extend({
     -- lee: Lee-Enfield (британская болтовая винтовка)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "lee",
-        category = "crafting",
+        type ="recipe",
+        name ="lee",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-wooden-stock", amount = 1},
-            {type = "item", name = "ATF-bolt-receiver", amount = 1},
-            {type = "item", name = "ATF-long-rifle-barrel", amount = 1}
+            {type ="item", name ="ATF-wooden-stock", amount = 1},
+            {type ="item", name ="ATF-bolt-receiver", amount = 1},
+            {type ="item", name ="ATF-long-rifle-barrel", amount = 1}
         },
         results = {
-            {type = "item", name = "lee", amount = 1}
+            {type ="item", name ="lee", amount = 1}
         }
     },
 
@@ -436,18 +436,18 @@ extend({
     -- g43: Gewehr 43 (немецкая полуавтоматическая винтовка)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "g43",
-        category = "crafting",
+        type ="recipe",
+        name ="g43",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-wooden-stock", amount = 1},
-            {type = "item", name = "ATF-semi-receiver", amount = 1},
-            {type = "item", name = "ATF-long-rifle-barrel", amount = 1}
+            {type ="item", name ="ATF-wooden-stock", amount = 1},
+            {type ="item", name ="ATF-semi-receiver", amount = 1},
+            {type ="item", name ="ATF-long-rifle-barrel", amount = 1}
         },
         results = {
-            {type = "item", name = "g43", amount = 1}
+            {type ="item", name ="g43", amount = 1}
         }
     },
 
@@ -455,18 +455,18 @@ extend({
     -- 1903: Springfield 1903 (американская болтовая винтовка)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "1903",
-        category = "crafting",
+        type ="recipe",
+        name ="1903",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-wooden-stock", amount = 1},
-            {type = "item", name = "ATF-long-rifle-barrel", amount = 1},
-            {type = "item", name = "ATF-bolt-receiver", amount = 1}
+            {type ="item", name ="ATF-wooden-stock", amount = 1},
+            {type ="item", name ="ATF-long-rifle-barrel", amount = 1},
+            {type ="item", name ="ATF-bolt-receiver", amount = 1}
         },
         results = {
-            {type = "item", name = "1903", amount = 1}
+            {type ="item", name ="1903", amount = 1}
         }
     },
 
@@ -474,19 +474,19 @@ extend({
     -- m14: M14 (американская винтовка)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "m14",
-        category = "crafting",
+        type ="recipe",
+        name ="m14",
+        category ="crafting",
         energy_required = 15,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-wooden-stock", amount = 1},
-            {type = "item", name = "ATF-long-rifle-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-auto-receiver", amount = 1}
+            {type ="item", name ="ATF-wooden-stock", amount = 1},
+            {type ="item", name ="ATF-long-rifle-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-auto-receiver", amount = 1}
         },
         results = {
-            {type = "item", name = "m14", amount = 1}
+            {type ="item", name ="m14", amount = 1}
         }
     },
 
@@ -498,19 +498,19 @@ extend({
     -- bren: Bren Gun (британский пулемёт)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "bren",
-        category = "crafting",
+        type ="recipe",
+        name ="bren",
+        category ="crafting",
         energy_required = 20,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-wooden-stock", amount = 1},
-            {type = "item", name = "ATF-mg-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-mg-receiver", amount = 1}
+            {type ="item", name ="ATF-wooden-stock", amount = 1},
+            {type ="item", name ="ATF-mg-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-mg-receiver", amount = 1}
         },
         results = {
-            {type = "item", name = "bren", amount = 1}
+            {type ="item", name ="bren", amount = 1}
         }
     },
 
@@ -518,19 +518,19 @@ extend({
     -- bar: BAR M1918 (американский автоматический карабин)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "bar",
-        category = "crafting",
+        type ="recipe",
+        name ="bar",
+        category ="crafting",
         energy_required = 20,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-wooden-stock", amount = 1},
-            {type = "item", name = "ATF-mg-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-mg-receiver", amount = 1}
+            {type ="item", name ="ATF-wooden-stock", amount = 1},
+            {type ="item", name ="ATF-mg-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-mg-receiver", amount = 1}
         },
         results = {
-            {type = "item", name = "bar", amount = 1}
+            {type ="item", name ="bar", amount = 1}
         }
     },
 
@@ -538,19 +538,19 @@ extend({
     -- mg42: MG42 (немецкий пулемёт)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "mg42",
-        category = "crafting",
+        type ="recipe",
+        name ="mg42",
+        category ="crafting",
         energy_required = 30,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-wooden-stock", amount = 1},
-            {type = "item", name = "ATF-mg-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-mg-receiver", amount = 1}
+            {type ="item", name ="ATF-wooden-stock", amount = 1},
+            {type ="item", name ="ATF-mg-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-mg-receiver", amount = 1}
         },
         results = {
-            {type = "item", name = "mg42", amount = 1}
+            {type ="item", name ="mg42", amount = 1}
         }
     },
 
@@ -558,19 +558,19 @@ extend({
     -- m1919: M1919 Browning (американский пулемёт)
     -- -------------------------------------------------------------------------
     {
-        type = "recipe",
-        name = "m1919",
-        category = "crafting",
+        type ="recipe",
+        name ="m1919",
+        category ="crafting",
         energy_required = 30,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-wooden-stock", amount = 1},
-            {type = "item", name = "ATF-mg-barrel", amount = 1},
-            {type = "item", name = "ATF-recoil-spring", amount = 1},
-            {type = "item", name = "ATF-mg-receiver", amount = 1}
+            {type ="item", name ="ATF-wooden-stock", amount = 1},
+            {type ="item", name ="ATF-mg-barrel", amount = 1},
+            {type ="item", name ="ATF-recoil-spring", amount = 1},
+            {type ="item", name ="ATF-mg-receiver", amount = 1}
         },
         results = {
-            {type = "item", name = "m1919", amount = 1}
+            {type ="item", name ="m1919", amount = 1}
         }
     }
 })

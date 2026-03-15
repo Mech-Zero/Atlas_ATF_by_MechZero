@@ -8,38 +8,38 @@ extend({
     -- fusion-laser: Лазерный луч Fusion (высокоэнергетический)
     -- =========================================================================
     {
-        type = "projectile",
-        name = "fusion-laser",
+        type ="projectile",
+        name ="fusion-laser",
         flags = {"not-on-map"},
         acceleration = 0.02,
         action = {
-            type = "direct",
+            type ="direct",
             action_delivery = {
-                type = "instant",
+                type ="instant",
                 target_effects = {
                     {
-                        type = "damage",
-                        damage = {amount = 150, type = "laser"}
+                        type ="damage",
+                        damage = {amount = 150, type ="laser"}
                     },
                     {
-                        type = "damage",
-                        damage = {amount = 50, type = "physical"}
+                        type ="damage",
+                        damage = {amount = 50, type ="physical"}
                     },
                     {
-                        type = "create-entity",
-                        entity_name = "explosion-hit"
+                        type ="create-entity",
+                        entity_name ="explosion-hit"
                     }
                 }
             }
         },
         light = {intensity = 1, size = 8},
         animation = {
-            filename = "__Atlas_ATF__/graphics/projectiles/beam/fusion-laser.png",
+            filename ="__Atlas_ATF__/graphics/projectiles/beam/fusion-laser.png",
             draw_as_glow = true,
             frame_count = 1,
             height = 50,
             width = 7,
-            priority = "high"
+            priority ="high"
         },
         hit_at_collision_position = true
     }

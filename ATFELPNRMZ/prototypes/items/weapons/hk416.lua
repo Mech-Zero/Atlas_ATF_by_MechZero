@@ -8,22 +8,22 @@ extend({
     -- hk416: Heckler & Koch 416 (современная штурмовая винтовка)
     -- =========================================================================
     {
-        type = "gun",
-        name = "hk416",
-        icon = "__Atlas_ATF__/graphics/weapons/416.png",
+        type ="gun",
+        name ="hk416",
+        icon ="__Atlas_ATF__/graphics/weapons/416.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "modernarms",
-        order = "a[hk416]",
+        subgroup ="modernarms",
+        order ="a[hk416]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "556x45",
+            type ="projectile",
+            ammo_category ="556x45",
             damage_modifier = 1.8,
             cooldown = 7,
             movement_slow_down_factor = 0.3,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -36,7 +36,7 @@ extend({
             range = 28,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/hk416.ogg",
+                    filename ="__Atlas_ATF__/sound/hk416.ogg",
                     volume = 0.6
                 }
             }

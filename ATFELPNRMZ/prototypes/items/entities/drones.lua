@@ -13,7 +13,7 @@ local function validate_place_result(entity_name)
        data.raw["character"][entity_name] then
         return true
     end
-    log("[ATF-Rebalance] Warning: place_result entity '" .. entity_name .. "' not found!")
+    log("[ATF-Rebalance] Warning: place_result entity '" .. entity_name .."' not found!")
     return false
 end
 
@@ -26,15 +26,15 @@ extend({
     -- ATF-rcxd: Дрон-камикадзе (взрывной)
     -- =========================================================================
     {
-        type = "item",
-        name = "ATF-rcxd",
-        icon = "__Atlas_ATF__/graphics/tech/rcxd.png",
+        type ="item",
+        name ="ATF-rcxd",
+        icon ="__Atlas_ATF__/graphics/tech/rcxd.png",
         icon_size = 256,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "ATF-drones",
-        order = "a[drones]-a[rcxd]",
-        place_result = "ATF-rcxd",
+        subgroup ="ATF-drones",
+        order ="a[drones]-a[rcxd]",
+        place_result ="ATF-rcxd",
         stack_size = 50
     },
 
@@ -42,15 +42,15 @@ extend({
     -- ATF-rcnd: Дрон-камикадзе (ядерный)
     -- =========================================================================
     {
-        type = "item",
-        name = "ATF-rcnd",
-        icon = "__Atlas_ATF__/graphics/tech/rcnd.png",
+        type ="item",
+        name ="ATF-rcnd",
+        icon ="__Atlas_ATF__/graphics/tech/rcnd.png",
         icon_size = 256,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "ATF-drones",
-        order = "a[drones]-b[rcnd]",
-        place_result = "ATF-rcnd",
+        subgroup ="ATF-drones",
+        order ="a[drones]-b[rcnd]",
+        place_result ="ATF-rcnd",
         stack_size = 50
     }
 })

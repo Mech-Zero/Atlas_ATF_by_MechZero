@@ -8,22 +8,22 @@ extend({
     -- g43: Gewehr 43 (полуавтоматическая винтовка WW2 эры)
     -- =========================================================================
     {
-        type = "gun",
-        name = "g43",
-        icon = "__Atlas_ATF__/graphics/weapons/g43.png",
+        type ="gun",
+        name ="g43",
+        icon ="__Atlas_ATF__/graphics/weapons/g43.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "oldarms",
-        order = "a[g43]",
+        subgroup ="oldarms",
+        order ="a[g43]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "792x57",
+            type ="projectile",
+            ammo_category ="792x57",
             damage_modifier = 3.0,
             cooldown = 20,
             movement_slow_down_factor = 0.4,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -36,7 +36,7 @@ extend({
             range = 30,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/g43.ogg",
+                    filename ="__Atlas_ATF__/sound/g43.ogg",
                     volume = 0.5
                 }
             }

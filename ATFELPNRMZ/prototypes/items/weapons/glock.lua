@@ -2,16 +2,16 @@ data:extend
 ({
 -- c96
   {
-    type = "gun",
+    type ="gun",
 	icon_size = 128, 
-    name = "glock",
-    icon = "__Atlas_ATF__/graphics/weapons/glock.png",
-    subgroup = "modernarms",
-    order = "a[glock]",
+    name ="glock",
+    icon ="__Atlas_ATF__/graphics/weapons/glock.png",
+    subgroup ="modernarms",
+    order ="a[glock]",
         attack_parameters =
     {
-      type = "projectile",
-      ammo_category = "9mm",
+      type ="projectile",
+      ammo_category ="9mm",
       cooldown = 7,
       damage_modifier = 2.0,
       movement_slow_down_factor = 0,-- glock.lua
@@ -24,22 +24,22 @@ extend({
     -- glock: Glock 17/19 (современный полимерный пистолет)
     -- =========================================================================
     {
-        type = "gun",
-        name = "glock",
-        icon = "__Atlas_ATF__/graphics/weapons/glock.png",
+        type ="gun",
+        name ="glock",
+        icon ="__Atlas_ATF__/graphics/weapons/glock.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "modernarms",
-        order = "a[glock]",
+        subgroup ="modernarms",
+        order ="a[glock]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "9mm",
+            type ="projectile",
+            ammo_category ="9mm",
             cooldown = 7,
             damage_modifier = 2.0,
             movement_slow_down_factor = 0,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -52,7 +52,7 @@ extend({
             range = 15,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/p08.ogg",
+                    filename ="__Atlas_ATF__/sound/p08.ogg",
                     volume = 0.5
                 }
             }
@@ -76,7 +76,7 @@ if mods["bobwarfare"] then
 end
       shell_particle =
       {
-        name = "shell-particle",
+        name ="shell-particle",
         direction_deviation = 0.1,
         speed = 0.1,
         speed_deviation = 0.03,
@@ -90,7 +90,7 @@ end
       			 	 sound =
 		 	 {
 		 	    {
-		 	      filename = "__Atlas_ATF__/sound/p08.ogg",
+		 	      filename ="__Atlas_ATF__/sound/p08.ogg",
 		   	    volume = 0.5
 		 	    }
 		   }

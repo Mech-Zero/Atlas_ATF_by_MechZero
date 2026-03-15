@@ -8,36 +8,36 @@ data:extend({
     -- 12g-buckshot: Дробь (стандартный дробовой патрон)
     -- =========================================================================
     {
-        type = "ammo",
-        name = "12g-buckshot",
-        icon = "__Atlas_ATF__/graphics/ammo/buckshot.png",
+        type ="ammo",
+        name ="12g-buckshot",
+        icon ="__Atlas_ATF__/graphics/ammo/buckshot.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        ammo_category = "shotgun-shell",
+        ammo_category ="shotgun-shell",
         ammo_type = {
-            category = "shotgun-shell",
-            target_type = "direction",
+            category ="shotgun-shell",
+            target_type ="direction",
             clamp_position = true,
             action = {
                 {
-                    type = "direct",
+                    type ="direct",
                     action_delivery = {
-                        type = "instant",
+                        type ="instant",
                         source_effects = {
                             {
-                                type = "create-explosion",
-                                entity_name = "explosion-gunshot"
+                                type ="create-explosion",
+                                entity_name ="explosion-gunshot"
                             }
                         }
                     }
                 },
                 {
-                    type = "direct",
+                    type ="direct",
                     repeat_count = 16,
                     action_delivery = {
-                        type = "projectile",
-                        projectile = "12g-buck",
+                        type ="projectile",
+                        projectile ="12g-buck",
                         starting_speed = 1,
                         starting_speed_deviation = 0.1,
                         direction_deviation = 0.3,
@@ -48,8 +48,8 @@ data:extend({
             }
         },
         magazine_size = 20,
-        subgroup = "ATF-ammo",
-        order = "b[shotgun]-b[buckshot]",
+        subgroup ="ATF-ammo",
+        order ="b[shotgun]-b[buckshot]",
         stack_size = 200
     },
 
@@ -57,35 +57,35 @@ data:extend({
     -- 12g-slug: Пуля (бронебойный дробовой патрон)
     -- =========================================================================
     {
-        type = "ammo",
-        name = "12g-slug",
-        icon = "__Atlas_ATF__/graphics/ammo/slug.png",
+        type ="ammo",
+        name ="12g-slug",
+        icon ="__Atlas_ATF__/graphics/ammo/slug.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        ammo_category = "shotgun-shell",
+        ammo_category ="shotgun-shell",
         ammo_type = {
-            category = "shotgun-shell",
-            target_type = "direction",
+            category ="shotgun-shell",
+            target_type ="direction",
             clamp_position = true,
             action = {
                 {
-                    type = "direct",
+                    type ="direct",
                     action_delivery = {
-                        type = "instant",
+                        type ="instant",
                         source_effects = {
                             {
-                                type = "create-explosion",
-                                entity_name = "explosion-gunshot"
+                                type ="create-explosion",
+                                entity_name ="explosion-gunshot"
                             }
                         }
                     }
                 },
                 {
-                    type = "direct",
+                    type ="direct",
                     action_delivery = {
-                        type = "projectile",
-                        projectile = "12g-slug",
+                        type ="projectile",
+                        projectile ="12g-slug",
                         starting_speed = 1,
                         starting_speed_deviation = 0.1,
                         direction_deviation = 0.3,
@@ -96,8 +96,8 @@ data:extend({
             }
         },
         magazine_size = 20,
-        subgroup = "ATF-ammo",
-        order = "b[shotgun]-b[slug]",
+        subgroup ="ATF-ammo",
+        order ="b[shotgun]-b[slug]",
         stack_size = 200
     },
 
@@ -105,36 +105,36 @@ data:extend({
     -- 12g-frag: Осколочный (взрывной дробовой патрон)
     -- =========================================================================
     {
-        type = "ammo",
-        name = "12g-frag",
-        icon = "__Atlas_ATF__/graphics/ammo/fragshot.png",
+        type ="ammo",
+        name ="12g-frag",
+        icon ="__Atlas_ATF__/graphics/ammo/fragshot.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        ammo_category = "shotgun-shell",
+        ammo_category ="shotgun-shell",
         ammo_type = {
-            category = "shotgun-shell",
-            target_type = "direction",
+            category ="shotgun-shell",
+            target_type ="direction",
             clamp_position = true,
             action = {
                 {
-                    type = "direct",
+                    type ="direct",
                     action_delivery = {
-                        type = "instant",
+                        type ="instant",
                         source_effects = {
                             {
-                                type = "create-explosion",
-                                entity_name = "explosion-gunshot"
+                                type ="create-explosion",
+                                entity_name ="explosion-gunshot"
                             }
                         }
                     }
                 },
                 {
-                    type = "direct",
+                    type ="direct",
                     repeat_count = 10,
                     action_delivery = {
-                        type = "projectile",
-                        projectile = "12g-frag",
+                        type ="projectile",
+                        projectile ="12g-frag",
                         starting_speed = 1,
                         starting_speed_deviation = 0.1,
                         direction_deviation = 0.3,
@@ -145,8 +145,8 @@ data:extend({
             }
         },
         magazine_size = 20,
-        subgroup = "ATF-ammo",
-        order = "b[shotgun]-b[frag]",
+        subgroup ="ATF-ammo",
+        order ="b[shotgun]-b[frag]",
         stack_size = 200
     },
 
@@ -154,36 +154,36 @@ data:extend({
     -- 12g-dragon: Зажигательный (драконье дыхание)
     -- =========================================================================
     {
-        type = "ammo",
-        name = "12g-dragon",
-        icon = "__Atlas_ATF__/graphics/ammo/dragonsbreath.png",
+        type ="ammo",
+        name ="12g-dragon",
+        icon ="__Atlas_ATF__/graphics/ammo/dragonsbreath.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        ammo_category = "shotgun-shell",
+        ammo_category ="shotgun-shell",
         ammo_type = {
-            category = "shotgun-shell",
-            target_type = "direction",
+            category ="shotgun-shell",
+            target_type ="direction",
             clamp_position = true,
             action = {
                 {
-                    type = "direct",
+                    type ="direct",
                     action_delivery = {
-                        type = "instant",
+                        type ="instant",
                         source_effects = {
                             {
-                                type = "create-explosion",
-                                entity_name = "explosion-gunshot"
+                                type ="create-explosion",
+                                entity_name ="explosion-gunshot"
                             }
                         }
                     }
                 },
                 {
-                    type = "direct",
+                    type ="direct",
                     repeat_count = 8,
                     action_delivery = {
-                        type = "projectile",
-                        projectile = "12g-inc",
+                        type ="projectile",
+                        projectile ="12g-inc",
                         starting_speed = 1,
                         starting_speed_deviation = 0.1,
                         direction_deviation = 0.3,
@@ -194,8 +194,8 @@ data:extend({
             }
         },
         magazine_size = 20,
-        subgroup = "ATF-ammo",
-        order = "b[shotgun]-b[dragon]",
+        subgroup ="ATF-ammo",
+        order ="b[shotgun]-b[dragon]",
         stack_size = 200
     }
 })

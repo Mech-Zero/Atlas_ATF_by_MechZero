@@ -8,32 +8,32 @@ extend({
     -- plasma40watt: Фазовая плазменная винтовка (40 Watt)
     -- =========================================================================
     {
-        type = "gun",
-        name = "plasma40watt",
-        icon = "__Atlas_ATF__/graphics/weapons/40watt.png",
+        type ="gun",
+        name ="plasma40watt",
+        icon ="__Atlas_ATF__/graphics/weapons/40watt.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "conceptarms",
-        order = "g[plasma]-a[40watt]",
+        subgroup ="conceptarms",
+        order ="g[plasma]-a[40watt]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "plasma40watt",
+            type ="projectile",
+            ammo_category ="plasma40watt",
             ammo_type = {
-                category = "plasma40watt",
+                category ="plasma40watt",
                 action = {
-                    type = "direct",
+                    type ="direct",
                     action_delivery = {
-                        type = "projectile",
-                        projectile = "40wattbolt",
+                        type ="projectile",
+                        projectile ="40wattbolt",
                         starting_speed = 2,
                         starting_speed_deviation = 0,
                         direction_deviation = 0,
                         range_deviation = 0,
                         max_range = 40,
                         source_effects = {
-                            type = "create-explosion",
-                            entity_name = "explosion-gunshot"
+                            type ="create-explosion",
+                            entity_name ="explosion-gunshot"
                         }
                     }
                 }
@@ -46,20 +46,20 @@ extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__Atlas_ATF__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }
                 },
                 middle_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/m25.ogg",
+                        filename ="__Atlas_ATF__/sound/m25.ogg",
                         volume = 1.0
                     }
                 },
                 end_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__Atlas_ATF__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }

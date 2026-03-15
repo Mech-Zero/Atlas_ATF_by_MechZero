@@ -8,18 +8,18 @@ extend({
     -- ATF-rcxd: Дрон-камикадзе RCXD (стандартный взрыв)
     -- =========================================================================
     {
-        type = "recipe",
-        name = "ATF-rcxd",
-        category = "crafting",
+        type ="recipe",
+        name ="ATF-rcxd",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "explosives", amount = 8},
-            {type = "item", name = "electronic-circuit", amount = 1},
-            {type = "item", name = "steel-plate", amount = 4}
+            {type ="item", name ="explosives", amount = 8},
+            {type ="item", name ="electronic-circuit", amount = 1},
+            {type ="item", name ="steel-plate", amount = 4}
         },
         results = {
-            {type = "item", name = "ATF-rcxd", amount = 1}
+            {type ="item", name ="ATF-rcxd", amount = 1}
         }
     },
 
@@ -27,17 +27,17 @@ extend({
     -- ATF-rcnd: Дрон-камикадзе RCND (ядерный/усиленный взрыв)
     -- =========================================================================
     {
-        type = "recipe",
-        name = "ATF-rcnd",
-        category = "crafting",
+        type ="recipe",
+        name ="ATF-rcnd",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "ATF-rcxd", amount = 1},
-            {type = "item", name = "atomic-bomb", amount = 1}
+            {type ="item", name ="ATF-rcxd", amount = 1},
+            {type ="item", name ="atomic-bomb", amount = 1}
         },
         results = {
-            {type = "item", name = "ATF-rcnd", amount = 1}
+            {type ="item", name ="ATF-rcnd", amount = 1}
         }
     }
 })

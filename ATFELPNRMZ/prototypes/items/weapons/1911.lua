@@ -8,21 +8,21 @@ extend({
     -- 1911: Colt M1911 (пистолет WW1/WW2 эры)
     -- =========================================================================
     {
-        type = "gun",
-        name = "1911",
-        icon = "__Atlas_ATF__/graphics/weapons/1911.png",
+        type ="gun",
+        name ="1911",
+        icon ="__Atlas_ATF__/graphics/weapons/1911.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "oldarms",
-        order = "a[1911]",
+        subgroup ="oldarms",
+        order ="a[1911]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "45acp",
+            type ="projectile",
+            ammo_category ="45acp",
             cooldown = 13,
             movement_slow_down_factor = 0,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -35,7 +35,7 @@ extend({
             range = 18,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/c96.ogg",
+                    filename ="__Atlas_ATF__/sound/c96.ogg",
                     volume = 0.5
                 }
             }

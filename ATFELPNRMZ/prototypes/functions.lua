@@ -54,7 +54,7 @@ end
 
 function ATF_allow_productivity(recipe)
     -- Обработка таблицы рецептов
-    if type(recipe) == "table" then
+    if type(recipe) =="table" then
         for _, r in pairs(recipe) do
             ATF_allow_productivity(r)
         end
@@ -62,14 +62,14 @@ function ATF_allow_productivity(recipe)
     end
     
     -- Обработка одиночного рецепта
-    if type(recipe) ~= "string" then
-        log("[ATF-Rebalance] Warning: ATF_allow_productivity received non-string: " .. tostring(recipe))
+    if type(recipe) ~="string" then
+        log("[ATF-Rebalance] Warning: ATF_allow_productivity received non-string:" .. tostring(recipe))
         return
     end
     
     -- Проверка существования рецепта
     if not data.raw.recipe[recipe] then
-        log("[ATF-Rebalance] Warning: Recipe '" .. recipe .. "' not found for productivity")
+        log("[ATF-Rebalance] Warning: Recipe '" .. recipe .."' not found for productivity")
         return
     end
     
@@ -90,7 +90,7 @@ function ATF_allow_productivity(recipe)
         end
     end
     
-    log("[ATF-Rebalance] Productivity enabled for: " .. recipe)
+    log("[ATF-Rebalance] Productivity enabled for:" .. recipe)
 end
 
 -- ============================================================================
@@ -103,7 +103,7 @@ end
 
 function ATF_deny_productivity(recipe)
     -- Обработка таблицы рецептов
-    if type(recipe) == "table" then
+    if type(recipe) =="table" then
         for _, r in pairs(recipe) do
             ATF_deny_productivity(r)
         end
@@ -111,7 +111,7 @@ function ATF_deny_productivity(recipe)
     end
     
     -- Обработка одиночного рецепта
-    if type(recipe) ~= "string" then
+    if type(recipe) ~="string" then
         return
     end
     
@@ -132,7 +132,7 @@ function ATF_deny_productivity(recipe)
         end
     end
     
-    log("[ATF-Rebalance] Productivity disabled for: " .. recipe)
+    log("[ATF-Rebalance] Productivity disabled for:" .. recipe)
 end
 
 -- ============================================================================
@@ -144,11 +144,11 @@ end
 
 function ATF_log_mod_info()
     log("[ATF-Rebalance] === Mod Compatibility Check ===")
-    log("[ATF-Rebalance] Bob's Warfare: " .. (mods["bobwarfare"] and "DETECTED" or "NOT DETECTED"))
-    log("[ATF-Rebalance] Bob's Metals: " .. (mods["bobplates"] and "DETECTED" or "NOT DETECTED"))
-    log("[ATF-Rebalance] Bob's Ores: " .. (mods["bobores"] and "DETECTED" or "NOT DETECTED"))
-    log("[ATF-Rebalance] Angel's Refining: " .. (mods["angelsrefining"] and "DETECTED" or "NOT DETECTED"))
-    log("[ATF-Rebalance] Space Age: " .. (mods["space-age"] and "DETECTED" or "NOT DETECTED"))
+    log("[ATF-Rebalance] Bob's Warfare:" .. (mods["bobwarfare"] and"DETECTED" or"NOT DETECTED"))
+    log("[ATF-Rebalance] Bob's Metals:" .. (mods["bobplates"] and"DETECTED" or"NOT DETECTED"))
+    log("[ATF-Rebalance] Bob's Ores:" .. (mods["bobores"] and"DETECTED" or"NOT DETECTED"))
+    log("[ATF-Rebalance] Angel's Refining:" .. (mods["angelsrefining"] and"DETECTED" or"NOT DETECTED"))
+    log("[ATF-Rebalance] Space Age:" .. (mods["space-age"] and"DETECTED" or"NOT DETECTED"))
     log("[ATF-Rebalance] =================================")
 end
 
@@ -164,7 +164,7 @@ function ATF_safe_require(path)
         require(path)
     end)
     if not ok then
-        log("[ATF-Rebalance] Error loading: " .. path .. " - " .. tostring(err))
+        log("[ATF-Rebalance] Error loading:" .. path .." -" .. tostring(err))
         return false, err
     end
     return true, nil

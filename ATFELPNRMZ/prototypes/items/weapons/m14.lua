@@ -2,24 +2,24 @@ data:extend
 ({
 -- stg44
   {
-    type = "gun",
+    type ="gun",
  icon_size = 128, 
 
-    name = "m14",
-    icon = "__Atlas_ATF__/graphics/weapons/m14.png",
+    name ="m14",
+    icon ="__Atlas_ATF__/graphics/weapons/m14.png",
     
-    subgroup = "coldwararms",
-    order = "a[m14]",
+    subgroup ="coldwararms",
+    order ="a[m14]",
     attack_parameters =
     {
-      type = "projectile",
-      ammo_category = "762x51",
+      type ="projectile",
+      ammo_category ="762x51",
 			damage_modifier = 2.2,
       cooldown = 16,
       movement_slow_down_factor = 0.4,
       shell_particle =
       {
-        name = "shell-particle",
+        name ="shell-particle",
         direction_deviation = 0.1,
         speed = 0.1,
         speed_deviation = 0.03,
@@ -33,7 +33,7 @@ data:extend
 			 	 sound =
 		 	 {
 		 	    {
-		 	      filename = "__Atlas_ATF__/sound/g43.ogg",
+		 	      filename ="__Atlas_ATF__/sound/g43.ogg",
 		   	    volume = 0.5
 		 	    }
 		   }

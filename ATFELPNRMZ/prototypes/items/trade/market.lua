@@ -12,7 +12,7 @@ local function validate_place_result(entity_name)
        data.raw["furnace"][entity_name] then
         return true
     end
-    log("[ATF-Rebalance] Warning: place_result entity '" .. entity_name .. "' not found!")
+    log("[ATF-Rebalance] Warning: place_result entity '" .. entity_name .."' not found!")
     return false
 end
 
@@ -25,15 +25,15 @@ extend({
     -- ATF-market: Торговый терминал (открытие торговли за ATF-cash)
     -- =========================================================================
     {
-        type = "item",
-        name = "ATF-market",
-        icon = "__Atlas_ATF__/graphics/entities/market.png",
+        type ="item",
+        name ="ATF-market",
+        icon ="__Atlas_ATF__/graphics/entities/market.png",
         icon_size = 256,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "ATF-market",
-        order = "a[ATF-market]",
-        place_result = "ATF-market",
+        subgroup ="ATF-market",
+        order ="a[ATF-market]",
+        place_result ="ATF-market",
         stack_size = 50
     }
 })

@@ -8,22 +8,22 @@ extend({
     -- stg60: Sturmgewehr 60 (футуристическая версия STG44)
     -- =========================================================================
     {
-        type = "gun",
-        name = "stg60",
-        icon = "__Atlas_ATF__/graphics/weapons/stg60.png",
+        type ="gun",
+        name ="stg60",
+        icon ="__Atlas_ATF__/graphics/weapons/stg60.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "conceptarms",
-        order = "a[stg60]",
+        subgroup ="conceptarms",
+        order ="a[stg60]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "792x33",
+            type ="projectile",
+            ammo_category ="792x33",
             damage_modifier = 2.5,
             cooldown = 4,
             movement_slow_down_factor = 0.3,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -37,20 +37,20 @@ extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__Atlas_ATF__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }
                 },
                 middle_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/stg60.ogg",
+                        filename ="__Atlas_ATF__/sound/stg60.ogg",
                         volume = 0.9
                     }
                 },
                 end_sound = {
                     {
-                        filename = "__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__Atlas_ATF__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }

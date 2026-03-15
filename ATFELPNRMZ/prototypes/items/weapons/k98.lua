@@ -8,22 +8,22 @@ extend({
     -- k98: Karabiner 98k (болтовая винтовка WW2 эры)
     -- =========================================================================
     {
-        type = "gun",
-        name = "k98",
-        icon = "__Atlas_ATF__/graphics/weapons/k98.png",
+        type ="gun",
+        name ="k98",
+        icon ="__Atlas_ATF__/graphics/weapons/k98.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "oldarms",
-        order = "a[k98]",
+        subgroup ="oldarms",
+        order ="a[k98]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "792x57",
+            type ="projectile",
+            ammo_category ="792x57",
             damage_modifier = 4.0,
             cooldown = 80,
             movement_slow_down_factor = 0.7,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -36,7 +36,7 @@ extend({
             range = 35,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/k98.ogg",
+                    filename ="__Atlas_ATF__/sound/k98.ogg",
                     volume = 0.9
                 }
             }

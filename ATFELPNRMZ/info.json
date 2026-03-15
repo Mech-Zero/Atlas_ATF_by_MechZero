@@ -1,16 +1,14 @@
 {
-    "name": "ATFELPNRMZ",
-    "author": "MechromancerZero",
-    "version": "1.0.7",
-    "title": "ATFELPN rebalance by MechromancerZero",
-    "homepage": "https://github.com/Mech-Zero/Atlas_ATF_by_MechZero",
-    "description": "Manufacture the titular items for self-defense, recreational or money-making purposes. Trade manufactured weapons and items for resources.",
-    "factorio_version": "2.0",
-    "dependencies": [
+   "name":"ATFELPNRMZ",
+   "author":"MechromancerZero",
+   "version":"1.0.7",
+   "title":"ATFELPN rebalance by MechromancerZero",
+   "homepage":"https://github.com/Mech-Zero/Atlas_ATF_by_MechZero",
+   "description":"Manufacture the titular items for self-defense, recreational or money-making purposes. Trade manufactured weapons and items for resources.",
+   "factorio_version":"2.0",
+   "dependencies": [
         "base >= 2.0",
-        "? boblibrary",
-        "? bobores",
-        "? bobplates",
-        "? bobwarfare"
+       "? boblibrary",
+       "? bobwarfare"
     ]
 }

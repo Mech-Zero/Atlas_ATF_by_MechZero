@@ -8,50 +8,50 @@ extend({
     -- 556belt: Ленточный снаряд 5.56mm (для ротативных пушек)
     -- =========================================================================
     {
-        type = "projectile",
-        name = "556belt",
+        type ="projectile",
+        name ="556belt",
         flags = {"not-on-map"},
         acceleration = 0.01,
         action = {
-            type = "direct",
+            type ="direct",
             action_delivery = {
-                type = "instant",
+                type ="instant",
                 target_effects = {
                     {
-                        type = "nested-result",
+                        type ="nested-result",
                         action = {
-                            type = "area",
+                            type ="area",
                             radius = 3,
                             action_delivery = {
-                                type = "instant",
+                                type ="instant",
                                 target_effects = {
                                     {
-                                        type = "damage",
-                                        damage = {amount = 25, type = "physical"}
+                                        type ="damage",
+                                        damage = {amount = 25, type ="physical"}
                                     },
                                     {
-                                        type = "damage",
-                                        damage = {amount = 5, type = "fire"}
+                                        type ="damage",
+                                        damage = {amount = 5, type ="fire"}
                                     }
                                 }
                             }
                         }
                     },
                     {
-                        type = "create-entity",
-                        entity_name = "explosion-hit"
+                        type ="create-entity",
+                        entity_name ="explosion-hit"
                     }
                 }
             }
         },
         light = {intensity = 0.5, size = 2},
         animation = {
-            filename = "__base__/graphics/entity/bullet/bullet.png",
+            filename ="__base__/graphics/entity/bullet/bullet.png",
             draw_as_glow = true,
             frame_count = 1,
             width = 3,
             height = 50,
-            priority = "high"
+            priority ="high"
         },
         hit_at_collision_position = true
     }

@@ -17,7 +17,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 1: +10% скорости стрельбы
     for i, v in ipairs(ATF_calibers) do
         table.insert(data.raw.technology["weapon-shooting-speed-1"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.1
         })
@@ -26,7 +26,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 2: +10% скорости стрельбы
     for i, v in ipairs(ATF_calibers) do
         table.insert(data.raw.technology["weapon-shooting-speed-2"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.1
         })
@@ -35,7 +35,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 3: +20% скорости стрельбы
     for i, v in ipairs(ATF_calibers) do
         table.insert(data.raw.technology["weapon-shooting-speed-3"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.2
         })
@@ -44,7 +44,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 4: +20% скорости стрельбы
     for i, v in ipairs(ATF_calibers) do
         table.insert(data.raw.technology["weapon-shooting-speed-4"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.2
         })
@@ -53,7 +53,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 5: +20% скорости стрельбы
     for i, v in ipairs(ATF_calibers) do
         table.insert(data.raw.technology["weapon-shooting-speed-5"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.2
         })
@@ -62,7 +62,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 6: +40% скорости стрельбы
     for i, v in ipairs(ATF_calibers) do
         table.insert(data.raw.technology["weapon-shooting-speed-6"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.4
         })
@@ -75,7 +75,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 1: +10% скорости стрельбы
     for i, v in ipairs(ATF_calibers_energy) do
         table.insert(data.raw.technology["weapon-shooting-speed-1"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.1
         })
@@ -84,7 +84,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 2: +10% скорости стрельбы
     for i, v in ipairs(ATF_calibers_energy) do
         table.insert(data.raw.technology["weapon-shooting-speed-2"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.1
         })
@@ -93,7 +93,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 3: +20% скорости стрельбы
     for i, v in ipairs(ATF_calibers_energy) do
         table.insert(data.raw.technology["weapon-shooting-speed-3"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.2
         })
@@ -102,7 +102,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 4: +20% скорости стрельбы
     for i, v in ipairs(ATF_calibers_energy) do
         table.insert(data.raw.technology["weapon-shooting-speed-4"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.2
         })
@@ -111,7 +111,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 5: +20% скорости стрельбы
     for i, v in ipairs(ATF_calibers_energy) do
         table.insert(data.raw.technology["weapon-shooting-speed-5"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.2
         })
@@ -120,7 +120,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 6: +40% скорости стрельбы
     for i, v in ipairs(ATF_calibers_energy) do
         table.insert(data.raw.technology["weapon-shooting-speed-6"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.4
         })
@@ -133,7 +133,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 1: +10% скорости стрельбы
     for i, v in ipairs(ATF_calibers_explosives) do
         table.insert(data.raw.technology["weapon-shooting-speed-1"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.1
         })
@@ -142,7 +142,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 2: +10% скорости стрельбы
     for i, v in ipairs(ATF_calibers_explosives) do
         table.insert(data.raw.technology["weapon-shooting-speed-2"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.1
         })
@@ -151,7 +151,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 3: +20% скорости стрельбы
     for i, v in ipairs(ATF_calibers_explosives) do
         table.insert(data.raw.technology["weapon-shooting-speed-3"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.2
         })
@@ -160,7 +160,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 4: +20% скорости стрельбы
     for i, v in ipairs(ATF_calibers_explosives) do
         table.insert(data.raw.technology["weapon-shooting-speed-4"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.2
         })
@@ -169,7 +169,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 5: +20% скорости стрельбы
     for i, v in ipairs(ATF_calibers_explosives) do
         table.insert(data.raw.technology["weapon-shooting-speed-5"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.2
         })
@@ -178,7 +178,7 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- Уровень 6: +40% скорости стрельбы
     for i, v in ipairs(ATF_calibers_explosives) do
         table.insert(data.raw.technology["weapon-shooting-speed-6"].effects, {
-            type = "gun-speed",
+            type ="gun-speed",
             ammo_category = v,
             modifier = 0.4
         })
@@ -188,9 +188,9 @@ if settings.startup["ATF-rof-upgrade"].value == true then
     -- ЛОГИРОВАНИЕ
     -- ========================================================================
 
-    log("[ATF-Rebalance] Kinetic RoF modifiers applied: " .. #ATF_calibers .. " calibers")
-    log("[ATF-Rebalance] Energy RoF modifiers applied: " .. #ATF_calibers_energy .. " calibers")
-    log("[ATF-Rebalance] Explosive RoF modifiers applied: " .. #ATF_calibers_explosives .. " calibers")
+    log("[ATF-Rebalance] Kinetic RoF modifiers applied:" .. #ATF_calibers .." calibers")
+    log("[ATF-Rebalance] Energy RoF modifiers applied:" .. #ATF_calibers_energy .." calibers")
+    log("[ATF-Rebalance] Explosive RoF modifiers applied:" .. #ATF_calibers_explosives .." calibers")
 else
     log("[ATF-Rebalance] Rate of Fire upgrades disabled in settings")
 end

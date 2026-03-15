@@ -7,17 +7,17 @@ local sounds = require("__base__.prototypes.entity.sounds")
 
 data:extend({
     {
-        type = "ammo-turret",
-        name = "ATF-gau-turret",
-        icon = "__Atlas_ATF__/graphics/items/gau-turret.png",
+        type ="ammo-turret",
+        name ="ATF-gau-turret",
+        icon ="__Atlas_ATF__/graphics/items/gau-turret.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"placeable-player", "player-creation"},
-        minable = {mining_time = 0.5, result = "ATF-gau-turret"},
-        fast_replaceable_group = "turret",
+        flags = {"placeable-player","player-creation"},
+        minable = {mining_time = 0.5, result ="ATF-gau-turret"},
+        fast_replaceable_group ="turret",
         max_health = 3500,
-        corpse = "gun-turret-remnants",
-        dying_explosion = "gun-turret-explosion",
+        corpse ="gun-turret-remnants",
+        dying_explosion ="gun-turret-explosion",
         collision_box = {{-0.7, -0.7}, {0.7, 0.7}},
         selection_box = {{-1, -1}, {1, 1}},
         damaged_trigger_effect = hit_effects.entity(),
@@ -33,10 +33,10 @@ data:extend({
         open_sound = sounds.machine_open,
         close_sound = sounds.machine_close,
         resistances = {
-            {type = "fire", decrease = 10, percent = 30},
-            {type = "physical", decrease = 10, percent = 30},
-            {type = "impact", decrease = 30, percent = 40},
-            {type = "explosion", decrease = 10, percent = 30}
+            {type ="fire", decrease = 10, percent = 30},
+            {type ="physical", decrease = 10, percent = 30},
+            {type ="impact", decrease = 30, percent = 40},
+            {type ="explosion", decrease = 10, percent = 30}
         },
         folded_animation = {
             layers = {
@@ -56,9 +56,9 @@ data:extend({
         attacking_animation = gun_turret_attack{},
         folding_animation = {
             layers = {
-                gun_turret_extension{run_mode = "backward"},
-                gun_turret_extension_mask{run_mode = "backward"},
-                gun_turret_extension_shadow{run_mode = "backward"}
+                gun_turret_extension{run_mode ="backward"},
+                gun_turret_extension_mask{run_mode ="backward"},
+                gun_turret_extension_shadow{run_mode ="backward"}
             }
         },
         graphics_set = {
@@ -66,16 +66,16 @@ data:extend({
                 animation = {
                     layers = {
                         {
-                            filename = "__base__/graphics/entity/gun-turret/gun-turret-base.png",
-                            priority = "high",
+                            filename ="__base__/graphics/entity/gun-turret/gun-turret-base.png",
+                            priority ="high",
                             width = 150,
                             height = 118,
                             shift = util.by_pixel(0.5, -1),
                             scale = 0.5
                         },
                         {
-                            filename = "__base__/graphics/entity/gun-turret/gun-turret-base-mask.png",
-                            flags = {"mask", "low-object"},
+                            filename ="__base__/graphics/entity/gun-turret/gun-turret-base-mask.png",
+                            flags = {"mask","low-object"},
                             line_length = 1,
                             width = 122,
                             height = 102,
@@ -90,8 +90,8 @@ data:extend({
         base_picture = {
             layers = {
                 {
-                    filename = "__base__/graphics/entity/gun-turret/gun-turret-base.png",
-                    priority = "high",
+                    filename ="__base__/graphics/entity/gun-turret/gun-turret-base.png",
+                    priority ="high",
                     width = 76,
                     height = 60,
                     axially_symmetrical = false,
@@ -99,8 +99,8 @@ data:extend({
                     frame_count = 1,
                     shift = util.by_pixel(1, -1),
                     hr_version = {
-                        filename = "__base__/graphics/entity/gun-turret/hr-gun-turret-base.png",
-                        priority = "high",
+                        filename ="__base__/graphics/entity/gun-turret/hr-gun-turret-base.png",
+                        priority ="high",
                         width = 150,
                         height = 118,
                         axially_symmetrical = false,
@@ -111,8 +111,8 @@ data:extend({
                     }
                 },
                 {
-                    filename = "__base__/graphics/entity/gun-turret/gun-turret-base-mask.png",
-                    flags = {"mask", "low-object"},
+                    filename ="__base__/graphics/entity/gun-turret/gun-turret-base-mask.png",
+                    flags = {"mask","low-object"},
                     line_length = 1,
                     width = 62,
                     height = 52,
@@ -122,8 +122,8 @@ data:extend({
                     shift = util.by_pixel(0, -4),
                     apply_runtime_tint = true,
                     hr_version = {
-                        filename = "__base__/graphics/entity/gun-turret/hr-gun-turret-base-mask.png",
-                        flags = {"mask", "low-object"},
+                        filename ="__base__/graphics/entity/gun-turret/hr-gun-turret-base-mask.png",
+                        flags = {"mask","low-object"},
                         line_length = 1,
                         width = 122,
                         height = 102,
@@ -139,14 +139,14 @@ data:extend({
         },
         vehicle_impact_sound = sounds.generic_impact,
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "20mm",  -- Калибр GAU
+            type ="projectile",
+            ammo_category ="20mm",  -- Калибр GAU
             damage_modifier = 2.0,
             cooldown = 5,  -- Очень быстрая скорострельность
             projectile_creation_distance = 1.2,
             projectile_center = {0, -0.0875},
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.05,
@@ -160,7 +160,7 @@ data:extend({
             turn_range = 1.0 / 3.0,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/gau-fire.ogg",
+                    filename ="__Atlas_ATF__/sound/gau-fire.ogg",
                     volume = 2
                 }
             }
@@ -170,8 +170,8 @@ data:extend({
         call_for_help_radius = 50,
         water_reflection = {
             pictures = {
-                filename = "__base__/graphics/entity/gun-turret/gun-turret-reflection.png",
-                priority = "extra-high",
+                filename ="__base__/graphics/entity/gun-turret/gun-turret-reflection.png",
+                priority ="extra-high",
                 width = 20,
                 height = 32,
                 shift = util.by_pixel(0, 40),

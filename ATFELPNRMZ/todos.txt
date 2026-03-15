@@ -5,7 +5,7 @@ ATFELPN Mod - TODO List
 
 [✓] by MechromancerZero добавленны взаимодествия с bob и ребаланс
 
-[✓] V2.0.7 - ВСЕ ЗАДАЧИ ВЫПОЛНЕНЫ
+[✓] V1.0.7 - ВСЕ ЗАДАЧИ ВЫПОЛНЕНЫ
 
 [⚠] ТРЕБУЕТ ТЕСТИРОВАНИЯ
 - Killerwatt beam sprites

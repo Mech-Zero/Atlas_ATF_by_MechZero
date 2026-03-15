@@ -8,18 +8,18 @@ extend({
     -- ATF-market: Торговый пост ATF (для торговли за ATF-cash)
     -- =========================================================================
     {
-        type = "recipe",
-        name = "ATF-market",
-        category = "crafting",
+        type ="recipe",
+        name ="ATF-market",
+        category ="crafting",
         energy_required = 10,
         enabled = false,
         ingredients = {
-            {type = "item", name = "steel-plate", amount = 4},
-            {type = "item", name = "advanced-circuit", amount = 2},
-            {type = "item", name = "radar", amount = 1}
+            {type ="item", name ="steel-plate", amount = 4},
+            {type ="item", name ="advanced-circuit", amount = 2},
+            {type ="item", name ="radar", amount = 1}
         },
         results = {
-            {type = "item", name = "ATF-market", amount = 1}
+            {type ="item", name ="ATF-market", amount = 1}
         }
     }
 })

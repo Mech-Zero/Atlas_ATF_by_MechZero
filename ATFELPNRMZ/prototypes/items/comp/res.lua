@@ -8,14 +8,14 @@ extend({
     -- MERCURY: Ртуть (из киновари)
     -- =========================================================================
     {
-        type = "item",
-        name = "mercury",
-        icon = "__Atlas_ATF__/graphics/items/mercury.png",
+        type ="item",
+        name ="mercury",
+        icon ="__Atlas_ATF__/graphics/items/mercury.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "ATF-res",
-        order = "a[mercury]",
+        subgroup ="ATF-res",
+        order ="a[mercury]",
         stack_size = 200
     },
 
@@ -23,14 +23,14 @@ extend({
     -- CINNABAR-ORE: Киноварная руда
     -- =========================================================================
     {
-        type = "item",
-        name = "cinnabar-ore",
-        icon = "__Atlas_ATF__/graphics/items/cinnabar.png",
+        type ="item",
+        name ="cinnabar-ore",
+        icon ="__Atlas_ATF__/graphics/items/cinnabar.png",
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "ATF-res",
-        order = "b[cinnabar-ore]",
+        subgroup ="ATF-res",
+        order ="b[cinnabar-ore]",
         stack_size = 200
     },
 
@@ -38,14 +38,14 @@ extend({
     -- ATF-NITRATE: Нитраты (из нитры)
     -- =========================================================================
     {
-        type = "item",
-        name = "ATF-nitrate",
-        icon = "__Atlas_ATF__/graphics/items/nitrate.png",
+        type ="item",
+        name ="ATF-nitrate",
+        icon ="__Atlas_ATF__/graphics/items/nitrate.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "ATF-res",
-        order = "c[ATF-nitrate]",
+        subgroup ="ATF-res",
+        order ="c[ATF-nitrate]",
         stack_size = 1000
     }
 })

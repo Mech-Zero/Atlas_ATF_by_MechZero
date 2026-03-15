@@ -8,19 +8,19 @@ extend({
     -- rcxd-detonate: Взрыв дрона RCXD (стандартный)
     -- =========================================================================
     {
-        type = "projectile",
-        name = "rcxd-detonate",
+        type ="projectile",
+        name ="rcxd-detonate",
         flags = {"not-on-map"},
         acceleration = 10,
         action = {
-            type = "area",
+            type ="area",
             radius = 8,
             action_delivery = {
-                type = "instant",
+                type ="instant",
                 target_effects = {
                     {
-                        type = "damage",
-                        damage = {amount = 500, type = "explosion"}
+                        type ="damage",
+                        damage = {amount = 500, type ="explosion"}
                     }
                 }
             }
@@ -32,19 +32,19 @@ extend({
     -- rcxd-blast: Взрыв дрона RCND (ядерный/усиленный)
     -- =========================================================================
     {
-        type = "projectile",
-        name = "rcxd-blast",
+        type ="projectile",
+        name ="rcxd-blast",
         flags = {"not-on-map"},
         acceleration = 0.02,
         action = {
-            type = "area",
+            type ="area",
             radius = 8,
             action_delivery = {
-                type = "instant",
+                type ="instant",
                 target_effects = {
                     {
-                        type = "damage",
-                        damage = {amount = 1000, type = "explosion"}
+                        type ="damage",
+                        damage = {amount = 1000, type ="explosion"}
                     }
                 }
             }

@@ -8,42 +8,42 @@ extend({
     -- 40wattbolt: Плазменный болт (40 Watt Phased Plasma)
     -- =========================================================================
     {
-        type = "projectile",
-        name = "40wattbolt",
+        type ="projectile",
+        name ="40wattbolt",
         flags = {"not-on-map"},
         acceleration = 0.01,
         action = {
-            type = "direct",
+            type ="direct",
             action_delivery = {
-                type = "instant",
+                type ="instant",
                 target_effects = {
                     {
-                        type = "damage",
-                        damage = {amount = 100, type = "laser"}
+                        type ="damage",
+                        damage = {amount = 100, type ="laser"}
                     },
                     {
-                        type = "damage",
-                        damage = {amount = 50, type = "fire"}
+                        type ="damage",
+                        damage = {amount = 50, type ="fire"}
                     },
                     {
-                        type = "damage",
-                        damage = {amount = 100, type = "physical"}
+                        type ="damage",
+                        damage = {amount = 100, type ="physical"}
                     },
                     {
-                        type = "create-entity",
-                        entity_name = "explosion-hit"
+                        type ="create-entity",
+                        entity_name ="explosion-hit"
                     }
                 }
             }
         },
         light = {intensity = 2, size = 8},
         animation = {
-            filename = "__Atlas_ATF__/graphics/projectiles/beam/plasma40.png",
+            filename ="__Atlas_ATF__/graphics/projectiles/beam/plasma40.png",
             draw_as_glow = true,
             frame_count = 1,
             height = 50,
             width = 7,
-            priority = "high"
+            priority ="high"
         },
         hit_at_collision_position = true
     }

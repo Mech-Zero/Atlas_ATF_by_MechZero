@@ -1,28 +1,28 @@
 -- c96.lua
--- Пистолет Mauser C96 "Broomhandle" (9mm)
+-- Пистолет Mauser C96"Broomhandle" (9mm)
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
 extend({
     -- =========================================================================
-    -- c96: Mauser C96 "Broomhandle" (пистолет WW1 эры)
+    -- c96: Mauser C96"Broomhandle" (пистолет WW1 эры)
     -- =========================================================================
     {
-        type = "gun",
-        name = "c96",
-        icon = "__Atlas_ATF__/graphics/weapons/c96.png",
+        type ="gun",
+        name ="c96",
+        icon ="__Atlas_ATF__/graphics/weapons/c96.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "oldarms",
-        order = "a[c96]",
+        subgroup ="oldarms",
+        order ="a[c96]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "9mm",
+            type ="projectile",
+            ammo_category ="9mm",
             cooldown = 15,
             movement_slow_down_factor = 0,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -35,7 +35,7 @@ extend({
             range = 15,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/c96.ogg",
+                    filename ="__Atlas_ATF__/sound/c96.ogg",
                     volume = 0.5
                 }
             }

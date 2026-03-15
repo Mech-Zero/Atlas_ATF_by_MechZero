@@ -8,22 +8,22 @@ extend({
     -- m1928: Thompson M1928 (пистолет-пулемёт WW2 эры)
     -- =========================================================================
     {
-        type = "gun",
-        name = "m1928",
-        icon = "__Atlas_ATF__/graphics/weapons/m1928.png",
+        type ="gun",
+        name ="m1928",
+        icon ="__Atlas_ATF__/graphics/weapons/m1928.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "oldarms",
-        order = "a[m1928]",
+        subgroup ="oldarms",
+        order ="a[m1928]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "45acp",
+            type ="projectile",
+            ammo_category ="45acp",
             damage_modifier = 1.5,
             cooldown = 6,
             movement_slow_down_factor = 0.15,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -36,7 +36,7 @@ extend({
             range = 18,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/m1928.ogg",
+                    filename ="__Atlas_ATF__/sound/m1928.ogg",
                     volume = 0.5
                 }
             }
@@ -48,17 +48,17 @@ extend({
     -- laserrcw: Laser RCW (лазерное концепт-оружие)
     -- =========================================================================
     {
-        type = "gun",
-        name = "laserrcw",
-        icon = "__Atlas_ATF__/graphics/weapons/rcw.png",
+        type ="gun",
+        name ="laserrcw",
+        icon ="__Atlas_ATF__/graphics/weapons/rcw.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "conceptarms",
-        order = "g[laser]-a[rcw]",
+        subgroup ="conceptarms",
+        order ="g[laser]-a[rcw]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "fusion-battery",
+            type ="projectile",
+            ammo_category ="fusion-battery",
             damage_modifier = 1.5,
             cooldown = 6,
             movement_slow_down_factor = 0.1,
@@ -66,7 +66,7 @@ extend({
             range = 35,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/rcw.ogg",
+                    filename ="__Atlas_ATF__/sound/rcw.ogg",
                     volume = 0.5
                 }
             }

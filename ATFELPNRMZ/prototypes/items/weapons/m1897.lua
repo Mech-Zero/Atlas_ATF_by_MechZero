@@ -8,22 +8,22 @@ extend({
     -- m1897: Winchester Model 1897 (помповый дробовик WW1 эры)
     -- =========================================================================
     {
-        type = "gun",
-        name = "m1897",
-        icon = "__Atlas_ATF__/graphics/weapons/m1897.png",
+        type ="gun",
+        name ="m1897",
+        icon ="__Atlas_ATF__/graphics/weapons/m1897.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "oldarms",
-        order = "a[m1897]",
+        subgroup ="oldarms",
+        order ="a[m1897]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "shotgun-shell",
+            type ="projectile",
+            ammo_category ="shotgun-shell",
             damage_modifier = 2.0,
             cooldown = 60,
             movement_slow_down_factor = 0.2,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -36,7 +36,7 @@ extend({
             range = 22,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/m1897.ogg",
+                    filename ="__Atlas_ATF__/sound/m1897.ogg",
                     volume = 0.8
                 }
             }

@@ -8,39 +8,39 @@ data:extend({
     -- 762x25: Стандартный пистолетный патрон (ТТ, ППШ)
     -- =========================================================================
     {
-        type = "ammo",
-        name = "762x25",
-        icon = "__Atlas_ATF__/graphics/ammo/762x25.png",
+        type ="ammo",
+        name ="762x25",
+        icon ="__Atlas_ATF__/graphics/ammo/762x25.png",
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {"item"},
-        ammo_category = "762x25",
+        ammo_category ="762x25",
         ammo_type = {
-            category = "762x25",
+            category ="762x25",
             action = {
-                type = "direct",
+                type ="direct",
                 action_delivery = {
-                    type = "instant",
+                    type ="instant",
                     source_effects = {
-                        type = "create-explosion",
-                        entity_name = "explosion-gunshot"
+                        type ="create-explosion",
+                        entity_name ="explosion-gunshot"
                     },
                     target_effects = {
                         {
-                            type = "create-entity",
-                            entity_name = "explosion-hit"
+                            type ="create-entity",
+                            entity_name ="explosion-hit"
                         },
                         {
-                            type = "damage",
-                            damage = {amount = 9, type = "physical"}
+                            type ="damage",
+                            damage = {amount = 9, type ="physical"}
                         }
                     }
                 }
             }
         },
         magazine_size = 30,
-        subgroup = "ATF-ammo",
-        order = "a[762x25]",
+        subgroup ="ATF-ammo",
+        order ="a[762x25]",
         stack_size = 200
     },
 
@@ -48,43 +48,43 @@ data:extend({
     -- 762x25drum: Барабанный магазин (7.62x25)
     -- =========================================================================
     {
-        type = "ammo",
-        name = "762x25drum",
-        icon = "__Atlas_ATF__/graphics/ammo/762x25drum.png",
+        type ="ammo",
+        name ="762x25drum",
+        icon ="__Atlas_ATF__/graphics/ammo/762x25drum.png",
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {"item"},
-        ammo_category = "762x25",
+        ammo_category ="762x25",
         ammo_type = {
-            category = "762x25",
+            category ="762x25",
             action = {
-                type = "direct",
+                type ="direct",
                 action_delivery = {
-                    type = "instant",
+                    type ="instant",
                     source_effects = {
-                        type = "create-explosion",
-                        entity_name = "explosion-gunshot"
+                        type ="create-explosion",
+                        entity_name ="explosion-gunshot"
                     },
                     target_effects = {
                         {
-                            type = "create-entity",
-                            entity_name = "explosion-hit"
+                            type ="create-entity",
+                            entity_name ="explosion-hit"
                         },
                         {
-                            type = "damage",
-                            damage = {amount = 9, type = "physical"}
+                            type ="damage",
+                            damage = {amount = 9, type ="physical"}
                         },
                         {
-                            type = "damage",
-                            damage = {amount = 4, type = "poison"}
+                            type ="damage",
+                            damage = {amount = 4, type ="poison"}
                         }
                     }
                 }
             }
         },
         magazine_size = 71,
-        subgroup = "ATF-ammo",
-        order = "a[762x25drum]",
+        subgroup ="ATF-ammo",
+        order ="a[762x25drum]",
         stack_size = 200
     }
 })

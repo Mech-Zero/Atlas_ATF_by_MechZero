@@ -12,14 +12,14 @@ extend({
     -- ATF-gunbox-old: Набор оружия старой эры (WW1/WW2)
     -- =========================================================================
     {
-        type = "item",
-        name = "ATF-gunbox-old",
-        icon = "__Atlas_ATF__/graphics/trade/box-old.png",
+        type ="item",
+        name ="ATF-gunbox-old",
+        icon ="__Atlas_ATF__/graphics/trade/box-old.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "ATF-bundles",
-        order = "a[gunbox]-a[old]",
+        subgroup ="ATF-bundles",
+        order ="a[gunbox]-a[old]",
         stack_size = 10
     },
 
@@ -27,14 +27,14 @@ extend({
     -- ATF-gunbox-coldwar: Набор оружия холодной войны
     -- =========================================================================
     {
-        type = "item",
-        name = "ATF-gunbox-coldwar",
-        icon = "__Atlas_ATF__/graphics/trade/box-coldwar.png",
+        type ="item",
+        name ="ATF-gunbox-coldwar",
+        icon ="__Atlas_ATF__/graphics/trade/box-coldwar.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "ATF-bundles",
-        order = "a[gunbox]-b[coldwar]",
+        subgroup ="ATF-bundles",
+        order ="a[gunbox]-b[coldwar]",
         stack_size = 10
     },
 
@@ -42,14 +42,14 @@ extend({
     -- ATF-gunbox-modern: Набор современного оружия
     -- =========================================================================
     {
-        type = "item",
-        name = "ATF-gunbox-modern",
-        icon = "__Atlas_ATF__/graphics/trade/box-modern.png",
+        type ="item",
+        name ="ATF-gunbox-modern",
+        icon ="__Atlas_ATF__/graphics/trade/box-modern.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "ATF-bundles",
-        order = "a[gunbox]-c[modern]",
+        subgroup ="ATF-bundles",
+        order ="a[gunbox]-c[modern]",
         stack_size = 10
     },
 
@@ -57,14 +57,14 @@ extend({
     -- ATF-gunbox-concept: Набор концепт-оружия
     -- =========================================================================
     {
-        type = "item",
-        name = "ATF-gunbox-concept",
-        icon = "__Atlas_ATF__/graphics/trade/box-concept.png",
+        type ="item",
+        name ="ATF-gunbox-concept",
+        icon ="__Atlas_ATF__/graphics/trade/box-concept.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "ATF-bundles",
-        order = "a[gunbox]-d[concept]",
+        subgroup ="ATF-bundles",
+        order ="a[gunbox]-d[concept]",
         stack_size = 10
     },
 
@@ -72,14 +72,14 @@ extend({
     -- ATF-gunbox-heavy: Набор тяжёлого оружия
     -- =========================================================================
     {
-        type = "item",
-        name = "ATF-gunbox-heavy",
-        icon = "__Atlas_ATF__/graphics/trade/box-heavy.png",
+        type ="item",
+        name ="ATF-gunbox-heavy",
+        icon ="__Atlas_ATF__/graphics/trade/box-heavy.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "ATF-bundles",
-        order = "a[gunbox]-e[heavy]",
+        subgroup ="ATF-bundles",
+        order ="a[gunbox]-e[heavy]",
         stack_size = 10
     },
 
@@ -87,14 +87,14 @@ extend({
     -- ATF-gunbox-ammo: Набор боеприпасов
     -- =========================================================================
     {
-        type = "item",
-        name = "ATF-gunbox-ammo",
-        icon = "__Atlas_ATF__/graphics/trade/box-ammo.png",
+        type ="item",
+        name ="ATF-gunbox-ammo",
+        icon ="__Atlas_ATF__/graphics/trade/box-ammo.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "ATF-bundles",
-        order = "a[gunbox]-f[ammo]",
+        subgroup ="ATF-bundles",
+        order ="a[gunbox]-f[ammo]",
         stack_size = 10
     }
 })

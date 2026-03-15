@@ -8,39 +8,39 @@ data:extend({
     -- 762x39: Стандартный винтовочный патрон (АК-47, АКМ)
     -- =========================================================================
     {
-        type = "ammo",
-        name = "762x39",
-        icon = "__Atlas_ATF__/graphics/ammo/762x39.png",
+        type ="ammo",
+        name ="762x39",
+        icon ="__Atlas_ATF__/graphics/ammo/762x39.png",
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {"item"},
-        ammo_category = "762x39",
+        ammo_category ="762x39",
         ammo_type = {
-            category = "762x39",
+            category ="762x39",
             action = {
-                type = "direct",
+                type ="direct",
                 action_delivery = {
-                    type = "instant",
+                    type ="instant",
                     source_effects = {
-                        type = "create-explosion",
-                        entity_name = "explosion-gunshot"
+                        type ="create-explosion",
+                        entity_name ="explosion-gunshot"
                     },
                     target_effects = {
                         {
-                            type = "create-entity",
-                            entity_name = "explosion-hit"
+                            type ="create-entity",
+                            entity_name ="explosion-hit"
                         },
                         {
-                            type = "damage",
-                            damage = {amount = 15, type = "physical"}
+                            type ="damage",
+                            damage = {amount = 15, type ="physical"}
                         }
                     }
                 }
             }
         },
         magazine_size = 30,
-        subgroup = "ATF-ammo",
-        order = "a[762x39]",
+        subgroup ="ATF-ammo",
+        order ="a[762x39]",
         stack_size = 200
     },
 
@@ -48,43 +48,43 @@ data:extend({
     -- 762x39drum: Барабанный магазин (7.62x39)
     -- =========================================================================
     {
-        type = "ammo",
-        name = "762x39drum",
-        icon = "__Atlas_ATF__/graphics/ammo/762x39drum.png",
+        type ="ammo",
+        name ="762x39drum",
+        icon ="__Atlas_ATF__/graphics/ammo/762x39drum.png",
         icon_size = 64,
         icon_mipmaps = 4,
         flags = {"item"},
-        ammo_category = "762x39",
+        ammo_category ="762x39",
         ammo_type = {
-            category = "762x39",
+            category ="762x39",
             action = {
-                type = "direct",
+                type ="direct",
                 action_delivery = {
-                    type = "instant",
+                    type ="instant",
                     source_effects = {
-                        type = "create-explosion",
-                        entity_name = "explosion-gunshot"
+                        type ="create-explosion",
+                        entity_name ="explosion-gunshot"
                     },
                     target_effects = {
                         {
-                            type = "create-entity",
-                            entity_name = "explosion-hit"
+                            type ="create-entity",
+                            entity_name ="explosion-hit"
                         },
                         {
-                            type = "damage",
-                            damage = {amount = 15, type = "physical"}
+                            type ="damage",
+                            damage = {amount = 15, type ="physical"}
                         },
                         {
-                            type = "damage",
-                            damage = {amount = 10, type = "impact"}
+                            type ="damage",
+                            damage = {amount = 10, type ="impact"}
                         }
                     }
                 }
             }
         },
         magazine_size = 100,
-        subgroup = "ATF-ammo",
-        order = "a[762x39drum]",
+        subgroup ="ATF-ammo",
+        order ="a[762x39drum]",
         stack_size = 200
     }
 })

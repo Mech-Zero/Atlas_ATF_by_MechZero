@@ -8,22 +8,22 @@ extend({
     -- ak74m: Kalashnikov AK-74M (автомат холодной войны)
     -- =========================================================================
     {
-        type = "gun",
-        name = "ak74m",
-        icon = "__Atlas_ATF__/graphics/weapons/ak74m.png",
+        type ="gun",
+        name ="ak74m",
+        icon ="__Atlas_ATF__/graphics/weapons/ak74m.png",
         icon_size = 128,
         icon_mipmaps = 4,
         flags = {"item"},
-        subgroup = "coldwararms",
-        order = "a[ak74m]",
+        subgroup ="coldwararms",
+        order ="a[ak74m]",
         attack_parameters = {
-            type = "projectile",
-            ammo_category = "545x39",
+            type ="projectile",
+            ammo_category ="545x39",
             damage_modifier = 2.0,
             cooldown = 7.5,
             movement_slow_down_factor = 0.3,
             shell_particle = {
-                name = "shell-particle",
+                name ="shell-particle",
                 direction_deviation = 0.1,
                 speed = 0.1,
                 speed_deviation = 0.03,
@@ -36,7 +36,7 @@ extend({
             range = 24,
             sound = {
                 {
-                    filename = "__Atlas_ATF__/sound/ak74m.ogg",
+                    filename ="__Atlas_ATF__/sound/ak74m.ogg",
                     volume = 1.0
                 }
             }

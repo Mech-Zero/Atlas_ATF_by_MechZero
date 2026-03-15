@@ -13,29 +13,29 @@ local hit_effects = require("__base__.prototypes.entity.hit-effects")
 local function assembler3pipepictures()
     return {
         north = {
-            filename = "__base__/graphics/entity/assembling-machine-3/assembling-machine-3-pipe-N.png",
-            priority = "extra-high",
+            filename ="__base__/graphics/entity/assembling-machine-3/assembling-machine-3-pipe-N.png",
+            priority ="extra-high",
             width = 32,
             height = 32,
             shift = util.by_pixel(0, -32)
         },
         south = {
-            filename = "__base__/graphics/entity/assembling-machine-3/assembling-machine-3-pipe-S.png",
-            priority = "extra-high",
+            filename ="__base__/graphics/entity/assembling-machine-3/assembling-machine-3-pipe-S.png",
+            priority ="extra-high",
             width = 32,
             height = 32,
             shift = util.by_pixel(0, 32)
         },
         east = {
-            filename = "__base__/graphics/entity/assembling-machine-3/assembling-machine-3-pipe-E.png",
-            priority = "extra-high",
+            filename ="__base__/graphics/entity/assembling-machine-3/assembling-machine-3-pipe-E.png",
+            priority ="extra-high",
             width = 32,
             height = 32,
             shift = util.by_pixel(32, 0)
         },
         west = {
-            filename = "__base__/graphics/entity/assembling-machine-3/assembling-machine-3-pipe-W.png",
-            priority = "extra-high",
+            filename ="__base__/graphics/entity/assembling-machine-3/assembling-machine-3-pipe-W.png",
+            priority ="extra-high",
             width = 32,
             height = 32,
             shift = util.by_pixel(-32, 0)
@@ -46,26 +46,26 @@ end
 local function pipecoverspictures()
     return {
         north = {
-            filename = "__base__/graphics/entity/pipe-covers/pipe-cover-north.png",
-            priority = "extra-high",
+            filename ="__base__/graphics/entity/pipe-covers/pipe-cover-north.png",
+            priority ="extra-high",
             width = 64,
             height = 64
         },
         south = {
-            filename = "__base__/graphics/entity/pipe-covers/pipe-cover-south.png",
-            priority = "extra-high",
+            filename ="__base__/graphics/entity/pipe-covers/pipe-cover-south.png",
+            priority ="extra-high",
             width = 64,
             height = 64
         },
         east = {
-            filename = "__base__/graphics/entity/pipe-covers/pipe-cover-east.png",
-            priority = "extra-high",
+            filename ="__base__/graphics/entity/pipe-covers/pipe-cover-east.png",
+            priority ="extra-high",
             width = 64,
             height = 64
         },
         west = {
-            filename = "__base__/graphics/entity/pipe-covers/pipe-cover-west.png",
-            priority = "extra-high",
+            filename ="__base__/graphics/entity/pipe-covers/pipe-cover-west.png",
+            priority ="extra-high",
             width = 64,
             height = 64
         }
@@ -78,19 +78,19 @@ end
 
 data:extend({
     {
-        type = "recipe-category",
-        name = "ATF-trade"
+        type ="recipe-category",
+        name ="ATF-trade"
     },
     {
-        type = "assembling-machine",
-        name = "ATF-market",
-        icon = "__Atlas_ATF__/graphics/entities/market.png",
+        type ="assembling-machine",
+        name ="ATF-market",
+        icon ="__Atlas_ATF__/graphics/entities/market.png",
         icon_size = 256,
-        flags = {"placeable-neutral", "placeable-player", "player-creation"},
-        minable = {mining_time = 0.2, result = "ATF-market"},
+        flags = {"placeable-neutral","placeable-player","player-creation"},
+        minable = {mining_time = 0.2, result ="ATF-market"},
         max_health = 1000,
-        corpse = "radar-remnants",
-        dying_explosion = "radar-explosion",
+        corpse ="radar-remnants",
+        dying_explosion ="radar-explosion",
         collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
         selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
         damaged_trigger_effect = hit_effects.entity(),
@@ -105,11 +105,11 @@ data:extend({
         -- ЭНЕРГИЯ
         -- =====================================================================
         energy_source = {
-            type = "electric",
-            usage_priority = "secondary-input",
+            type ="electric",
+            usage_priority ="secondary-input",
             emissions_per_minute = 0
         },
-        energy_usage = "375kW",
+        energy_usage ="375kW",
         
         -- =====================================================================
         -- ИНВЕНТАРЬ (КРИТИЧНО ДЛЯ ИНТЕРФЕЙСА)
@@ -123,7 +123,7 @@ data:extend({
         module_specification = {
             module_slots = 4
         },
-        allowed_effects = {"consumption", "speed", "productivity", "pollution"},
+        allowed_effects = {"consumption","speed","productivity","pollution"},
         
         -- =====================================================================
         -- АНИМАЦИИ
@@ -131,8 +131,8 @@ data:extend({
         animation = {
             layers = {
                 {
-                    filename = "__Atlas_ATF__/graphics/entities/market.png",
-                    priority = "high",
+                    filename ="__Atlas_ATF__/graphics/entities/market.png",
+                    priority ="high",
                     width = 256,
                     height = 256,
                     frame_count = 1,
@@ -141,8 +141,8 @@ data:extend({
                     shift = util.by_pixel(0, 0)
                 },
                 {
-                    filename = "__base__/graphics/entity/radar/radar-shadow.png",
-                    priority = "high",
+                    filename ="__base__/graphics/entity/radar/radar-shadow.png",
+                    priority ="high",
                     width = 172,
                     height = 94,
                     frame_count = 1,
@@ -160,8 +160,8 @@ data:extend({
         working_visualisations = {
             {
                 animation = {
-                    filename = "__base__/graphics/entity/radar/radar-antenna.png",
-                    priority = "high",
+                    filename ="__base__/graphics/entity/radar/radar-antenna.png",
+                    priority ="high",
                     width = 64,
                     height = 64,
                     frame_count = 32,
@@ -182,13 +182,13 @@ data:extend({
         -- =====================================================================
         fluid_boxes = {
             {
-                production_type = "input",
+                production_type ="input",
                 pipe_picture = assembler3pipepictures(),
                 pipe_covers = pipecoverspictures(),
                 base_area = 10,
                 base_level = -1,
                 pipe_connections = {{
-                    flow_direction = "input",
+                    flow_direction ="input",
                     direction = defines.direction.south,
                     position = {-1, 1}  -- ИСПРАВЛЕНО: смещено влево
                 }},
@@ -196,13 +196,13 @@ data:extend({
                 secondary_draw_orders = {north = -1}
             },
             {
-                production_type = "output",
+                production_type ="output",
                 pipe_picture = assembler3pipepictures(),
                 pipe_covers = pipecoverspictures(),
                 base_area = 10,
                 base_level = 1,
                 pipe_connections = {{
-                    flow_direction = "output",
+                    flow_direction ="output",
                     direction = defines.direction.north,
                     position = {1, -1}  -- ИСПРАВЛЕНО: смещено вправо
                 }},
@@ -221,7 +221,7 @@ data:extend({
         working_sound = {
             sound = {
                 {
-                    filename = "__base__/sound/radar.ogg",
+                    filename ="__base__/sound/radar.ogg",
                     volume = 0.5
                 }
             },
@@ -233,13 +233,13 @@ data:extend({
         -- =====================================================================
         -- ЗАМЕНА С ДРУГИМИ МАШИНАМИ
         -- =====================================================================
-        fast_replaceable_group = "assembling-machine",
+        fast_replaceable_group ="assembling-machine",
         
         -- =====================================================================
         -- СОПРОТИВЛЕНИЯ
         -- =====================================================================
         resistances = {
-            {type = "fire", percent = 100}
+            {type ="fire", percent = 100}
         },
         
         -- =====================================================================
