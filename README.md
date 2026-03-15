@@ -1,4 +1,4 @@
-# Alcohol, Tobacco, Firearms, Explosives, Lasers, Plasmas and Nukes (ATFELPN)
+# Alcohol, Tobacco, Firearms, Explosives, Lasers, Plasmas and Nukes (ATFELPN) Unoffical 
 
 [![Factorio 2.0](https://img.shields.io/badge/Factorio-2.0-blue.svg)](https://factorio.com)
 [![Version](https://img.shields.io/badge/Version-2.0.7-green.svg)](https://github.com/MechromancerZero/Atlas_ATF/releases)
@@ -161,6 +161,7 @@
 - **Bob's Mods Team** — за отличную совместимость
 - **Всем тестировщикам** — за помощь в отладке
 - **Сообществу Factorio** — за поддержку и идеи
+- **Автору (ATFELPN)** - за основу для мода
 
 ---
 
