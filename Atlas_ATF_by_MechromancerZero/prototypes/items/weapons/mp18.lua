@@ -1,0 +1,60 @@
+-- mp18.lua
+-- Пистолет-пулемёт MP18 Bergmann (9mm Parabellum, WW1 эра)
+-- Версия: 1.1 (Rebalance by Mechromancer-Zero)
+-- Интеграция: Bob's Warfare Compatibility
+
+extend({
+    -- =========================================================================
+    -- mp18: MP18 Bergmann (первый серийный пистолет-пулемёт)
+    -- =========================================================================
+    {
+        type = "gun",
+        name = "mp18",
+        icon = "__Atlas_ATF__/graphics/weapons/mp18.png",
+        icon_size = 128,
+        icon_mipmaps = 4,
+        flags = {"item"},
+        subgroup = "oldarms",
+        order = "a[mp18]",
+        attack_parameters = {
+            type = "projectile",
+            ammo_category = "9mm",
+            damage_modifier = 1.2,
+            cooldown = 7.2,
+            movement_slow_down_factor = 0.2,
+            shell_particle = {
+                name = "shell-particle",
+                direction_deviation = 0.1,
+                speed = 0.1,
+                speed_deviation = 0.03,
+                center = {0, 0.1},
+                creation_distance = -0.5,
+                starting_frame_speed = 0.4,
+                starting_frame_speed_deviation = 0.1
+            },
+            projectile_creation_distance = 1.125,
+            range = 18,
+            sound = {
+                {
+                    filename = "__Atlas_ATF__/sound/mp18.ogg",
+                    volume = 1.0
+                }
+            }
+        },
+        stack_size = 100
+    }
+})
+
+-- ============================================================================
+-- ЛОГИРОВАНИЕ ЗАГРУЗКИ
+-- ============================================================================
+
+log("[ATF-Rebalance] MP18 Bergmann weapon loaded successfully")
+
+-- ============================================================================
+-- ИНТЕГРАЦИЯ С BOB'S WARFARE (опционально)
+-- ============================================================================
+
+if mods["bobwarfare"] then
+    log("[ATF-Rebalance] Bob's Warfare detected - MP18 compatible")
+end
