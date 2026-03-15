@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="g3",
-        icon ="__Atlas_ATF__/graphics/weapons/g3.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/g3.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="coldwararms",
         order ="a[g3]",
         attack_parameters = {
@@ -36,7 +36,7 @@ data:extend({
             range = 35,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/g3.ogg",
+                    filename ="__ATFELPNRMZ__/sound/g3.ogg",
                     volume = 0.5
                 }
             }

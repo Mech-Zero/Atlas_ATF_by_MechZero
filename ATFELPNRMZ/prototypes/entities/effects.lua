@@ -14,7 +14,7 @@ data:extend({
         flags = {"not-on-map"},
         animations = {
             {
-                filename ="__Atlas_ATF__/graphics/projectiles/plasma/40mm-plasma.png",
+                filename ="__ATFELPNRMZ__/graphics/projectiles/plasma/40mm-plasma.png",
                 tint = {r = 139 / 255, g = 0, b = 139 / 255, a = 1},
                 priority ="extra-high",
                 width = 128,

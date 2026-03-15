@@ -1,11 +1,11 @@
-data:data:extend
+data:extend
 ({
 -- mg42
   {
     type ="gun",
 	icon_size = 128, 
     name ="mg42",
-    icon ="__Atlas_ATF__/graphics/weapons/mg42.png",
+    icon ="__ATFELPNRMZ__/graphics/weapons/mg42.png",
     
     subgroup ="oldarms",
     order ="a[mg42]",
@@ -32,7 +32,7 @@ data:data:extend
 			 	 sound =
 		 	 {
 		 	    {
-		 	      filename ="__Atlas_ATF__/sound/mg42.ogg",
+		 	      filename ="__ATFELPNRMZ__/sound/mg42.ogg",
 		   	    volume = 0.9
 		 	    }
 		   }

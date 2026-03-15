@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="stg60",
-        icon ="__Atlas_ATF__/graphics/weapons/stg60.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/stg60.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="conceptarms",
         order ="a[stg60]",
         attack_parameters = {
@@ -37,20 +37,20 @@ data:extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__ATFELPNRMZ__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }
                 },
                 middle_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/stg60.ogg",
+                        filename ="__ATFELPNRMZ__/sound/stg60.ogg",
                         volume = 0.9
                     }
                 },
                 end_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__ATFELPNRMZ__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }

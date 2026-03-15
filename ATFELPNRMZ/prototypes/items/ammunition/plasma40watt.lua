@@ -10,10 +10,10 @@ data:extend({
     {
         type ="ammo",
         name ="40wattmag",
-        icon ="__Atlas_ATF__/graphics/ammo/40watt.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/40watt.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="plasma40watt",
         ammo_type = {
             category ="plasma40watt",

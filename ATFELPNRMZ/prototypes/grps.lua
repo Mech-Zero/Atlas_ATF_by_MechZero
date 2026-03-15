@@ -10,7 +10,7 @@ data:extend({
     {
         type ="item-group",
         name ="atf-firearms",
-        icon ="__Atlas_ATF__/graphics/tech/smg.png",
+        icon ="__ATFELPNRMZ__/graphics/tech/smg.png",
         icon_size = 256,
         inventory_order ="m",
         order ="m"
@@ -116,7 +116,7 @@ data:extend({
     {
         type ="item-group",
         name ="atf-trading",
-        icon ="__Atlas_ATF__/graphics/tech/trade.png",
+        icon ="__ATFELPNRMZ__/graphics/tech/trade.png",
         icon_size = 256,
         inventory_order ="n",
         order ="n"

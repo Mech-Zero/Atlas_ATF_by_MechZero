@@ -1,11 +1,11 @@
-data:data:extend
+data:extend
 ({
 -- m4a1
   {
     type ="gun",
     name ="m4a1",
 	icon_size = 128,
-    icon ="__Atlas_ATF__/graphics/weapons/m4a1.png",
+    icon ="__ATFELPNRMZ__/graphics/weapons/m4a1.png",
     
     subgroup ="modernarms",
     order ="a[m4a1]",
@@ -34,7 +34,7 @@ data:data:extend
         begin_sound =
         {
           {
-            filename ="__Atlas_ATF__/sound/empty.ogg",
+            filename ="__ATFELPNRMZ__/sound/empty.ogg",
             volume = 0,
 			speed = 1000.0
           }
@@ -42,14 +42,14 @@ data:data:extend
         middle_sound =
         {
           {
-            filename ="__Atlas_ATF__/sound/m4a1.ogg",
+            filename ="__ATFELPNRMZ__/sound/m4a1.ogg",
             volume = 0.9
           }
         },
         end_sound =
         {
           {
-            filename ="__Atlas_ATF__/sound/empty.ogg",
+            filename ="__ATFELPNRMZ__/sound/empty.ogg",
             volume = 0,
 			speed = 1000.0
           }
@@ -64,7 +64,7 @@ data:data:extend
     type ="gun",
     name ="swatt",
 	icon_size = 128,
-    icon ="__Atlas_ATF__/graphics/weapons/swatt.png",
+    icon ="__ATFELPNRMZ__/graphics/weapons/swatt.png",
     
     subgroup ="conceptarms",
     order ="d[swatt]",
@@ -93,7 +93,7 @@ data:data:extend
         begin_sound =
         {
           {
-            filename ="__Atlas_ATF__/sound/empty.ogg",
+            filename ="__ATFELPNRMZ__/sound/empty.ogg",
             volume = 0,
 			speed = 1000.0
           }
@@ -101,14 +101,14 @@ data:data:extend
         middle_sound =
         {
           {
-            filename ="__Atlas_ATF__/sound/m4a1.ogg",
+            filename ="__ATFELPNRMZ__/sound/m4a1.ogg",
             volume = 0.9
           }
         },
         end_sound =
         {
           {
-            filename ="__Atlas_ATF__/sound/empty.ogg",
+            filename ="__ATFELPNRMZ__/sound/empty.ogg",
             volume = 0,
 			speed = 1000.0
           }

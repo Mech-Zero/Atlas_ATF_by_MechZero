@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="mp5",
-        icon ="__Atlas_ATF__/graphics/weapons/mp5.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/mp5.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="coldwararms",
         order ="a[mp5]",
         attack_parameters = {
@@ -36,7 +36,7 @@ data:extend({
             range = 20,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/mp5.ogg",
+                    filename ="__ATFELPNRMZ__/sound/mp5.ogg",
                     volume = 1.0
                 }
             }

@@ -78,10 +78,11 @@ data:extend({
     {
         type ="armor",
         name ="ATF-tesla-armor",
-        icon ="__Atlas_ATF__/graphics/armor/tesla.png",
+        icon ="__ATFELPNRMZ__/graphics/armor/tesla.png",
         icon_size = 256,
+        durability = 120000,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         resistances = {
             {type ="physical", decrease = 40, percent = 50},
             {type ="impact", decrease = 10, percent = 90},
@@ -111,10 +112,11 @@ data:extend({
     {
         type ="armor",
         name ="ATF-hellfire-armor",
-        icon ="__Atlas_ATF__/graphics/armor/hellfire.png",
+        icon ="__ATFELPNRMZ__/graphics/armor/hellfire.png",
         icon_size = 256,
+        durability = 160000,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         resistances = {
             {type ="physical", decrease = 40, percent = 50},
             {type ="impact", decrease = 10, percent = 90},
@@ -144,10 +146,11 @@ data:extend({
     {
         type ="armor",
         name ="ATF-eliminator-armor",
-        icon ="__Atlas_ATF__/graphics/armor/eliminator.png",
+        icon ="__ATFELPNRMZ__/graphics/armor/eliminator.png",
         icon_size = 256,
+        durability = 210000,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         resistances = {
             {type ="physical", decrease = 50, percent = 80},
             {type ="impact", decrease = 10, percent = 95},

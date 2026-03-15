@@ -10,10 +10,10 @@ data:extend({
     {
         type ="ammo",
         name ="792x33",
-        icon ="__Atlas_ATF__/graphics/ammo/792x33.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/792x33.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="792x33",
         ammo_type = {
             category ="792x33",

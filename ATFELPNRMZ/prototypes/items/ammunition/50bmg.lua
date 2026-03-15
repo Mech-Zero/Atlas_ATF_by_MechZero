@@ -3,17 +3,17 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-data:data:extend({
+data:extend({
     -- =========================================================================
     -- 50bmg: Крупнокалиберный патрон (пулемёт M2, снайперские винтовки)
     -- =========================================================================
     {
         type ="ammo",
         name ="50bmg",
-        icon ="__Atlas_ATF__/graphics/ammo/50bmg.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/50bmg.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="50bmg",
         ammo_type = {
             category ="50bmg",

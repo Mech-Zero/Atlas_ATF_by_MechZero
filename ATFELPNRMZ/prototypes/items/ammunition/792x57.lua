@@ -10,10 +10,10 @@ data:extend({
     {
         type ="ammo",
         name ="792x57",
-        icon ="__Atlas_ATF__/graphics/ammo/792x57.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/792x57.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="792x57",
         ammo_type = {
             category ="792x57",
@@ -50,10 +50,10 @@ data:extend({
     {
         type ="ammo",
         name ="792x57drum",
-        icon ="__Atlas_ATF__/graphics/ammo/792x57drum.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/792x57drum.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="792x57",
         ammo_type = {
             category ="792x57",

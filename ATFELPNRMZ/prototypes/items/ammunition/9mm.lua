@@ -3,17 +3,17 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-data:data:extend({
+data:extend({
     -- =========================================================================
     -- 9mm: Стандартный пистолетный патрон
     -- =========================================================================
     {
         type ="ammo",
         name ="9mm",
-        icon ="__Atlas_ATF__/graphics/ammo/9mm.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/9mm.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="9mm",
         ammo_type = {
             category ="9mm",
@@ -50,10 +50,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="9mmp",
-        icon ="__Atlas_ATF__/graphics/ammo/9mmp.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/9mmp.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="9mm",
         ammo_type = {
             category ="9mm",
@@ -90,10 +90,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="9mmu",
-        icon ="__Atlas_ATF__/graphics/ammo/9mmu.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/9mmu.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="9mm",
         ammo_type = {
             category ="9mm",

@@ -3,17 +3,17 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-data:data:extend({
+data:extend({
     -- =========================================================================
     -- 45acp: Стандартный пистолетный патрон
     -- =========================================================================
     {
         type ="ammo",
         name ="45acp",
-        icon ="__Atlas_ATF__/graphics/ammo/45acp.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/45acp.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="45acp",
         ammo_type = {
             category ="45acp",
@@ -50,10 +50,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="45acpdrum",
-        icon ="__Atlas_ATF__/graphics/ammo/45acpdrum.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/45acpdrum.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="45acp",
         ammo_type = {
             category ="45acp",

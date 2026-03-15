@@ -44,7 +44,7 @@ if data.raw["beam"] and data.raw["beam"]["killerwatt-beam"] then
     if not killerwatt_beam.graphics_set then
         killerwatt_beam.graphics_set = {
             beam = {
-                filename ="__Atlas_ATF__/graphics/projectiles/beam/killerwatt-beam.png",
+                filename ="__ATFELPNRMZ__/graphics/projectiles/beam/killerwatt-beam.png",
                 width = 8,
                 height = 128,
                 priority ="high",
@@ -74,7 +74,7 @@ if data.raw["market"] and data.raw["market"]["ATF-market"] then
     
     if not atf_market.pictures and not atf_market.picture then
         atf_market.pictures = {
-            filename ="__Atlas_ATF__/graphics/entity/market/atf-market.png",
+            filename ="__ATFELPNRMZ__/graphics/entity/market/atf-market.png",
             width = 128,
             height = 128,
             direction_count = 4,

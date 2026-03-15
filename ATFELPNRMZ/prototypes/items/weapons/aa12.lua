@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="aa12",
-        icon ="__Atlas_ATF__/graphics/weapons/aa12.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/aa12.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="modernarms",
         order ="a[aa12]",
         attack_parameters = {
@@ -36,7 +36,7 @@ data:extend({
             range = 22,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/autoshotgun.ogg",
+                    filename ="__ATFELPNRMZ__/sound/autoshotgun.ogg",
                     volume = 0.8
                 }
             }

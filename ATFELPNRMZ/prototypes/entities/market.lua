@@ -84,7 +84,7 @@ data:extend({
     {
         type ="assembling-machine",
         name ="ATF-market",
-        icon ="__Atlas_ATF__/graphics/entities/market.png",
+        icon ="__ATFELPNRMZ__/graphics/entities/market.png",
         icon_size = 256,
         flags = {"placeable-neutral","placeable-player","player-creation"},
         minable = {mining_time = 0.2, result ="ATF-market"},
@@ -105,9 +105,11 @@ data:extend({
         -- ЭНЕРГИЯ
         -- =====================================================================
         energy_source = {
-            type ="electric",
-            usage_priority ="secondary-input",
-            emissions_per_minute = 0
+            type = "electric",
+            usage_priority = "secondary-input",
+            emissions_per_minute = {
+                pollution = 0,
+            },
         },
         energy_usage ="375kW",
         
@@ -131,7 +133,7 @@ data:extend({
         animation = {
             layers = {
                 {
-                    filename ="__Atlas_ATF__/graphics/entities/market.png",
+                    filename ="__ATFELPNRMZ__/graphics/entities/market.png",
                     priority ="high",
                     width = 256,
                     height = 256,

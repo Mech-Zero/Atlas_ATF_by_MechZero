@@ -10,10 +10,10 @@ data:extend({
     {
         type ="ammo",
         name ="3006ammo",
-        icon ="__Atlas_ATF__/graphics/ammo/3006.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/3006.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="3006ammo",
         ammo_type = {
             category ="3006ammo",
@@ -50,10 +50,10 @@ data:extend({
     {
         type ="ammo",
         name ="3006belt",
-        icon ="__Atlas_ATF__/graphics/ammo/3006belt.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/3006belt.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="3006ammo",
         ammo_type = {
             category ="3006ammo",

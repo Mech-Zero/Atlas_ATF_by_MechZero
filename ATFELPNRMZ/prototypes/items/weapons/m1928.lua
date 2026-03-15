@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="m1928",
-        icon ="__Atlas_ATF__/graphics/weapons/m1928.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/m1928.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="oldarms",
         order ="a[m1928]",
         attack_parameters = {
@@ -36,7 +36,7 @@ data:extend({
             range = 18,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/m1928.ogg",
+                    filename ="__ATFELPNRMZ__/sound/m1928.ogg",
                     volume = 0.5
                 }
             }
@@ -50,10 +50,10 @@ data:extend({
     {
         type ="gun",
         name ="laserrcw",
-        icon ="__Atlas_ATF__/graphics/weapons/rcw.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/rcw.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="conceptarms",
         order ="g[laser]-a[rcw]",
         attack_parameters = {
@@ -66,7 +66,7 @@ data:extend({
             range = 35,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/rcw.ogg",
+                    filename ="__ATFELPNRMZ__/sound/rcw.ogg",
                     volume = 0.5
                 }
             }

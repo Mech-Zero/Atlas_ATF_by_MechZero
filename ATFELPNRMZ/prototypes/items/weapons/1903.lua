@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="1903",
-        icon ="__Atlas_ATF__/graphics/weapons/1903.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/1903.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="oldarms",
         order ="a[1903]",
         attack_parameters = {
@@ -36,7 +36,7 @@ data:extend({
             range = 38,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/1903.ogg",
+                    filename ="__ATFELPNRMZ__/sound/1903.ogg",
                     volume = 0.9
                 }
             }

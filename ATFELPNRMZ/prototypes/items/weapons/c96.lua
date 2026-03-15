@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="c96",
-        icon ="__Atlas_ATF__/graphics/weapons/c96.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/c96.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="oldarms",
         order ="a[c96]",
         attack_parameters = {
@@ -35,7 +35,7 @@ data:extend({
             range = 15,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/c96.ogg",
+                    filename ="__ATFELPNRMZ__/sound/c96.ogg",
                     volume = 0.5
                 }
             }

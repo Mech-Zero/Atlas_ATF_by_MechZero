@@ -28,10 +28,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-rcxd",
-        icon ="__Atlas_ATF__/graphics/tech/rcxd.png",
+        icon ="__ATFELPNRMZ__/graphics/tech/rcxd.png",
         icon_size = 256,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-drones",
         order ="a[drones]-a[rcxd]",
         place_result ="ATF-rcxd",
@@ -44,10 +44,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-rcnd",
-        icon ="__Atlas_ATF__/graphics/tech/rcnd.png",
+        icon ="__ATFELPNRMZ__/graphics/tech/rcnd.png",
         icon_size = 256,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-drones",
         order ="a[drones]-b[rcnd]",
         place_result ="ATF-rcnd",
@@ -56,7 +56,7 @@ data:extend({
 })
 
 -- ============================================================================
--- ПРОВЕРКА СУЩЕСТВОВАНИЯ СУЩНОСТЕЙ (после data:data:extend)
+-- ПРОВЕРКА СУЩЕСТВОВАНИЯ СУЩНОСТЕЙ (после data:extend)
 -- ============================================================================
 
 validate_place_result("ATF-rcxd")

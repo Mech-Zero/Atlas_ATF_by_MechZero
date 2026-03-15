@@ -3,7 +3,7 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-extend({
+data:extend({
     -- =========================================================================
     -- 556-swatt: Электрический снаряд (для SWATT оружия)
     -- =========================================================================
@@ -34,7 +34,7 @@ extend({
         },
         light = {intensity = 1, size = 5},
         animation = {
-            filename ="__Atlas_ATF__/graphics/projectiles/beam/swatt.png",
+            filename ="__ATFELPNRMZ__/graphics/projectiles/beam/swatt.png",
             draw_as_glow = true,
             frame_count = 1,
             apply_runtime_tint = true,

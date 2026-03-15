@@ -3,7 +3,7 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-extend({
+data:extend({
     -- =========================================================================
     -- helios-plasma: Плазменный снаряд Helios Rifle
     -- =========================================================================
@@ -42,7 +42,7 @@ extend({
         },
         light = {intensity = 4, size = 8},
         animation = {
-            filename ="__Atlas_ATF__/graphics/projectiles/plasma/red-plasma.png",
+            filename ="__ATFELPNRMZ__/graphics/projectiles/plasma/red-plasma.png",
             draw_as_glow = true,
             frame_count = 1,
             height = 32,

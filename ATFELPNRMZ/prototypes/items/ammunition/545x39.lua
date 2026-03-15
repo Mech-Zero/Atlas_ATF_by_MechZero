@@ -3,17 +3,17 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-data:data:extend({
+data:extend({
     -- =========================================================================
     -- 545x39: Стандартный винтовочный патрон
     -- =========================================================================
     {
         type ="ammo",
         name ="545x39",
-        icon ="__Atlas_ATF__/graphics/ammo/545x39.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/545x39.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="545x39",
         ammo_type = {
             category ="545x39",
@@ -50,10 +50,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="545long",
-        icon ="__Atlas_ATF__/graphics/ammo/545long.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/545long.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="545x39",
         ammo_type = {
             category ="545x39",

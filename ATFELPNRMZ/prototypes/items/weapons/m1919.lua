@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="m1919",
-        icon ="__Atlas_ATF__/graphics/weapons/m1919.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/m1919.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="oldarms",
         order ="a[m1919]",
         attack_parameters = {
@@ -37,20 +37,20 @@ data:extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__ATFELPNRMZ__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }
                 },
                 middle_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/m1919.ogg",
+                        filename ="__ATFELPNRMZ__/sound/m1919.ogg",
                         volume = 0.9
                     }
                 },
                 end_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__ATFELPNRMZ__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }

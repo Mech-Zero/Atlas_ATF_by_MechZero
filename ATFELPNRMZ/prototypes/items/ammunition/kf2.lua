@@ -10,10 +10,10 @@ data:extend({
     {
         type ="ammo",
         name ="killerwattmag",
-        icon ="__Atlas_ATF__/graphics/ammo/killerwattmag.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/killerwattmag.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="killerwatt",
         ammo_type = {
             category ="killerwatt",
@@ -46,10 +46,10 @@ data:extend({
     {
         type ="ammo",
         name ="heliosmag",
-        icon ="__Atlas_ATF__/graphics/ammo/heliosmag.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/heliosmag.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="helios",
         ammo_type = {
             category ="helios",

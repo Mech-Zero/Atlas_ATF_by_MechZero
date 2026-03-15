@@ -3,7 +3,7 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-extend({
+data:extend({
     -- =========================================================================
     -- 40wattbolt: Плазменный болт (40 Watt Phased Plasma)
     -- =========================================================================
@@ -38,7 +38,7 @@ extend({
         },
         light = {intensity = 2, size = 8},
         animation = {
-            filename ="__Atlas_ATF__/graphics/projectiles/beam/plasma40.png",
+            filename ="__ATFELPNRMZ__/graphics/projectiles/beam/plasma40.png",
             draw_as_glow = true,
             frame_count = 1,
             height = 50,

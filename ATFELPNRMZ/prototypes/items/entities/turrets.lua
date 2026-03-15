@@ -31,7 +31,7 @@ data:extend({
         icon ="__base__/graphics/icons/laser-turret.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-turrets",
         order ="b[turret]-a[swatt-turret]",
         place_result ="ATF-swatt-turret",
@@ -47,7 +47,7 @@ data:extend({
         icon ="__base__/graphics/icons/laser-turret.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-turrets",
         order ="b[turret]-b[m25-turret]",
         place_result ="ATF-m25-turret",
@@ -60,10 +60,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-grenade-turret",
-        icon ="__Atlas_ATF__/graphics/items/grenade-turret.png",
+        icon ="__ATFELPNRMZ__/graphics/items/grenade-turret.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-turrets",
         order ="b[turret]-c[grenade-turret]",
         place_result ="ATF-grenade-turret",
@@ -76,10 +76,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-grenade-turret-2",
-        icon ="__Atlas_ATF__/graphics/items/grenade-turret.png",
+        icon ="__ATFELPNRMZ__/graphics/items/grenade-turret.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-turrets",
         order ="b[turret]-d[grenade-turret-2]",
         place_result ="ATF-grenade-turret-2",
@@ -95,7 +95,7 @@ data:extend({
         icon ="__base__/graphics/icons/gun-turret.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-turrets",
         order ="b[turret]-e[gau-turret]",
         place_result ="ATF-gau-turret",
@@ -111,7 +111,7 @@ data:extend({
         icon ="__base__/graphics/icons/laser-turret.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-turrets",
         order ="b[turret]-f[rcw-turret]",
         place_result ="ATF-rcw-turret",
@@ -120,7 +120,7 @@ data:extend({
 })
 
 -- ============================================================================
--- ПРОВЕРКА СУЩЕСТВОВАНИЯ СУЩНОСТЕЙ (после data:data:extend)
+-- ПРОВЕРКА СУЩЕСТВОВАНИЯ СУЩНОСТЕЙ (после data:extend)
 -- ============================================================================
 
 validate_place_result("ATF-swatt-turret")

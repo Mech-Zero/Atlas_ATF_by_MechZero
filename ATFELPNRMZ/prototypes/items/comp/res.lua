@@ -3,17 +3,17 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare + Bob's Metals Compatibility
 
-data:data:extend({
+data:extend({
     -- =========================================================================
     -- MERCURY: Ртуть (из киновари)
     -- =========================================================================
     {
         type ="item",
         name ="mercury",
-        icon ="__Atlas_ATF__/graphics/items/mercury.png",
+        icon ="__ATFELPNRMZ__/graphics/items/mercury.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-res",
         order ="a[mercury]",
         stack_size = 200
@@ -25,10 +25,10 @@ data:data:extend({
     {
         type ="item",
         name ="cinnabar-ore",
-        icon ="__Atlas_ATF__/graphics/items/cinnabar.png",
+        icon ="__ATFELPNRMZ__/graphics/items/cinnabar.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-res",
         order ="b[cinnabar-ore]",
         stack_size = 200
@@ -40,10 +40,10 @@ data:data:extend({
     {
         type ="item",
         name ="ATF-nitrate",
-        icon ="__Atlas_ATF__/graphics/items/nitrate.png",
+        icon ="__ATFELPNRMZ__/graphics/items/nitrate.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-res",
         order ="c[ATF-nitrate]",
         stack_size = 1000

@@ -3,17 +3,17 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-data:data:extend({
+data:extend({
     -- =========================================================================
     -- 40mm-he: Фугасный гранатомётный выстрел
     -- =========================================================================
     {
         type ="ammo",
         name ="40mm-he",
-        icon ="__Atlas_ATF__/graphics/ammo/40mm.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/40mm.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="40mm",
         ammo_type = {
             category ="40mm",
@@ -46,10 +46,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="40mm-incendiary",
-        icon ="__Atlas_ATF__/graphics/ammo/40mm-incendiary.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/40mm-incendiary.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="40mm",
         ammo_type = {
             category ="40mm",
@@ -82,10 +82,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="40mm-acid",
-        icon ="__Atlas_ATF__/graphics/ammo/40mm-acid.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/40mm-acid.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="40mm",
         ammo_type = {
             category ="40mm",
@@ -118,10 +118,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="40mm-plasma",
-        icon ="__Atlas_ATF__/graphics/ammo/40mm-plasma.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/40mm-plasma.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="40mm",
         ammo_type = {
             category ="40mm",

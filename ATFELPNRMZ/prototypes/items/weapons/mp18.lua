@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="mp18",
-        icon ="__Atlas_ATF__/graphics/weapons/mp18.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/mp18.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="oldarms",
         order ="a[mp18]",
         attack_parameters = {
@@ -36,7 +36,7 @@ data:extend({
             range = 18,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/mp18.ogg",
+                    filename ="__ATFELPNRMZ__/sound/mp18.ogg",
                     volume = 1.0
                 }
             }

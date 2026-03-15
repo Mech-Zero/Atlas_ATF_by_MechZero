@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="m79",
-        icon ="__Atlas_ATF__/graphics/weapons/m79.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/m79.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="coldwararms",
         order ="h[grenade]-a[m79]",
         attack_parameters = {
@@ -26,7 +26,7 @@ data:extend({
             range = 40,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/m79.ogg",
+                    filename ="__ATFELPNRMZ__/sound/m79.ogg",
                     volume = 0.5
                 }
             }
@@ -40,10 +40,10 @@ data:extend({
     {
         type ="gun",
         name ="m32",
-        icon ="__Atlas_ATF__/graphics/weapons/m32.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/m32.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="modernarms",
         order ="h[grenade]-b[m32]",
         attack_parameters = {
@@ -56,7 +56,7 @@ data:extend({
             range = 45,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/mgl.ogg",
+                    filename ="__ATFELPNRMZ__/sound/mgl.ogg",
                     volume = 0.5
                 }
             }
@@ -70,10 +70,10 @@ data:extend({
     {
         type ="gun",
         name ="warmachine",
-        icon ="__Atlas_ATF__/graphics/weapons/warmachine.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/warmachine.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="conceptarms",
         order ="h[grenade]-c[warmachine]",
         attack_parameters = {
@@ -86,7 +86,7 @@ data:extend({
             range = 50,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/glmg.ogg",
+                    filename ="__ATFELPNRMZ__/sound/glmg.ogg",
                     volume = 1.2
                 }
             }

@@ -14,10 +14,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-cash",
-        icon ="__Atlas_ATF__/graphics/items/cash.png",
+        icon ="__ATFELPNRMZ__/graphics/items/cash.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-cash",
         order ="a[ATF-cash]",
         stack_size = 1000
@@ -29,10 +29,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-gold",
-        icon ="__Atlas_ATF__/graphics/items/gold.png",
+        icon ="__ATFELPNRMZ__/graphics/items/gold.png",
         icon_size = 256,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-cash",
         order ="b[ATF-gold]",
         stack_size = 50
@@ -44,10 +44,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-gems",
-        icon ="__Atlas_ATF__/graphics/items/gems.png",
+        icon ="__ATFELPNRMZ__/graphics/items/gems.png",
         icon_size = 256,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-cash",
         order ="c[ATF-gems]",
         stack_size = 50
@@ -59,10 +59,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-gembox",
-        icon ="__Atlas_ATF__/graphics/items/gem.png",
+        icon ="__ATFELPNRMZ__/graphics/items/gem.png",
         icon_size = 256,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-cash",
         order ="d[ATF-gembox]",
         stack_size = 10

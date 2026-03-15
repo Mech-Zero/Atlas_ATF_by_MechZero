@@ -14,10 +14,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-gunbox-old",
-        icon ="__Atlas_ATF__/graphics/trade/box-old.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/box-old.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-bundles",
         order ="a[gunbox]-a[old]",
         stack_size = 10
@@ -29,10 +29,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-gunbox-coldwar",
-        icon ="__Atlas_ATF__/graphics/trade/box-coldwar.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/box-coldwar.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-bundles",
         order ="a[gunbox]-b[coldwar]",
         stack_size = 10
@@ -44,10 +44,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-gunbox-modern",
-        icon ="__Atlas_ATF__/graphics/trade/box-modern.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/box-modern.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-bundles",
         order ="a[gunbox]-c[modern]",
         stack_size = 10
@@ -59,10 +59,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-gunbox-concept",
-        icon ="__Atlas_ATF__/graphics/trade/box-concept.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/box-concept.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-bundles",
         order ="a[gunbox]-d[concept]",
         stack_size = 10
@@ -74,10 +74,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-gunbox-heavy",
-        icon ="__Atlas_ATF__/graphics/trade/box-heavy.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/box-heavy.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-bundles",
         order ="a[gunbox]-e[heavy]",
         stack_size = 10
@@ -89,10 +89,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-gunbox-ammo",
-        icon ="__Atlas_ATF__/graphics/trade/box-ammo.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/box-ammo.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-bundles",
         order ="a[gunbox]-f[ammo]",
         stack_size = 10

@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="k98",
-        icon ="__Atlas_ATF__/graphics/weapons/k98.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/k98.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="oldarms",
         order ="a[k98]",
         attack_parameters = {
@@ -36,7 +36,7 @@ data:extend({
             range = 35,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/k98.ogg",
+                    filename ="__ATFELPNRMZ__/sound/k98.ogg",
                     volume = 0.9
                 }
             }

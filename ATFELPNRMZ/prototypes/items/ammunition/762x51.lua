@@ -3,17 +3,17 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-data:data:extend({
+data:extend({
     -- =========================================================================
     -- 762x51: Стандартный винтовочный патрон (NATO)
     -- =========================================================================
     {
         type ="ammo",
         name ="762x51",
-        icon ="__Atlas_ATF__/graphics/ammo/762x51.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/762x51.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="762x51",
         ammo_type = {
             category ="762x51",
@@ -50,10 +50,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="762x51drum",
-        icon ="__Atlas_ATF__/graphics/ammo/762x51drum.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/762x51drum.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="762x51",
         ammo_type = {
             category ="762x51",
@@ -90,10 +90,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="762belt",
-        icon ="__Atlas_ATF__/graphics/ammo/762belt.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/762belt.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="762belt",
         ammo_type = {
             category ="762belt",

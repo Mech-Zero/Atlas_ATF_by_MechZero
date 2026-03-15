@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="deathmachine",
-        icon ="__Atlas_ATF__/graphics/weapons/deathmachine.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/deathmachine.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="conceptarms",
         order ="c[rot]-c[deathmachine]",
         attack_parameters = {
@@ -37,20 +37,20 @@ data:extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/minigun-begin.ogg",
+                        filename ="__ATFELPNRMZ__/sound/minigun-begin.ogg",
                         volume = 0.5,
                         speed = 1
                     }
                 },
                 middle_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/deathmachine.ogg",
+                        filename ="__ATFELPNRMZ__/sound/deathmachine.ogg",
                         volume = 1.0
                     }
                 },
                 end_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/minigun-stop.ogg",
+                        filename ="__ATFELPNRMZ__/sound/minigun-stop.ogg",
                         volume = 0.5,
                         speed = 1
                     }
@@ -66,10 +66,10 @@ data:extend({
     {
         type ="gun",
         name ="m134",
-        icon ="__Atlas_ATF__/graphics/weapons/m134.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/m134.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="conceptarms",
         order ="c[rot]-b[m134]",
         attack_parameters = {
@@ -93,20 +93,20 @@ data:extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/minigun-begin.ogg",
+                        filename ="__ATFELPNRMZ__/sound/minigun-begin.ogg",
                         volume = 0.5,
                         speed = 1
                     }
                 },
                 middle_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/minigun-middle.ogg",
+                        filename ="__ATFELPNRMZ__/sound/minigun-middle.ogg",
                         volume = 1.0
                     }
                 },
                 end_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/minigun-stop.ogg",
+                        filename ="__ATFELPNRMZ__/sound/minigun-stop.ogg",
                         volume = 0.5,
                         speed = 1
                     }
@@ -122,10 +122,10 @@ data:extend({
     {
         type ="gun",
         name ="gau",
-        icon ="__Atlas_ATF__/graphics/weapons/gau.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/gau.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="conceptarms",
         order ="c[rot]-d[gau]",
         attack_parameters = {
@@ -149,20 +149,20 @@ data:extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/minigun-begin.ogg",
+                        filename ="__ATFELPNRMZ__/sound/minigun-begin.ogg",
                         volume = 0.5,
                         speed = 1
                     }
                 },
                 middle_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/gau.ogg",
+                        filename ="__ATFELPNRMZ__/sound/gau.ogg",
                         volume = 1.5
                     }
                 },
                 end_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/minigun-stop.ogg",
+                        filename ="__ATFELPNRMZ__/sound/minigun-stop.ogg",
                         volume = 0.5,
                         speed = 1
                     }

@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="atlas20mm",
-        icon ="__Atlas_ATF__/graphics/weapons/atlas20mm.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/atlas20mm.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="conceptarms",
         order ="b[atlas20mm]",
         attack_parameters = {
@@ -36,7 +36,7 @@ data:extend({
             range = 100,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/20mm.ogg",
+                    filename ="__ATFELPNRMZ__/sound/20mm.ogg",
                     volume = 0.9
                 }
             }

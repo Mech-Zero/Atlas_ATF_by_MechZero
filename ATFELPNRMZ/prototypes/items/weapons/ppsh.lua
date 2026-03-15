@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="ppsh",
-        icon ="__Atlas_ATF__/graphics/weapons/ppsh.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/ppsh.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="oldarms",
         order ="a[ppsh]",
         attack_parameters = {
@@ -36,7 +36,7 @@ data:extend({
             range = 18,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/ppsh.ogg",
+                    filename ="__ATFELPNRMZ__/sound/ppsh.ogg",
                     volume = 1.0
                 }
             }

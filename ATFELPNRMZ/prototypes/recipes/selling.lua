@@ -3,7 +3,7 @@
 -- Версия: 2.0 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Mods Compatibility
 
-extend({
+data:extend({
     -- =========================================================================
     -- ATF-sell-ammo: Продажа коробки патронов (38 типов)
     -- =========================================================================
@@ -11,7 +11,7 @@ extend({
         type ="recipe",
         name ="ATF-sell-ammo",
         category ="ATF-trade",
-        icon ="__Atlas_ATF__/graphics/trade/selling/box-ammo.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/selling/box-ammo.png",
         icon_size = 64,
         allow_as_intermediate = false,
         subgroup ="ATF-selling",
@@ -33,7 +33,7 @@ extend({
         type ="recipe",
         name ="ATF-sell-old",
         category ="ATF-trade",
-        icon ="__Atlas_ATF__/graphics/trade/selling/box-old.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/selling/box-old.png",
         icon_size = 64,
         allow_as_intermediate = false,
         subgroup ="ATF-selling",
@@ -55,7 +55,7 @@ extend({
         type ="recipe",
         name ="ATF-sell-coldwar",
         category ="ATF-trade",
-        icon ="__Atlas_ATF__/graphics/trade/selling/box-coldwar.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/selling/box-coldwar.png",
         icon_size = 64,
         allow_as_intermediate = false,
         subgroup ="ATF-selling",
@@ -77,7 +77,7 @@ extend({
         type ="recipe",
         name ="ATF-sell-modern",
         category ="ATF-trade",
-        icon ="__Atlas_ATF__/graphics/trade/selling/box-modern.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/selling/box-modern.png",
         icon_size = 64,
         allow_as_intermediate = false,
         subgroup ="ATF-selling",
@@ -99,7 +99,7 @@ extend({
         type ="recipe",
         name ="ATF-sell-concept",
         category ="ATF-trade",
-        icon ="__Atlas_ATF__/graphics/trade/selling/box-concept.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/selling/box-concept.png",
         icon_size = 64,
         allow_as_intermediate = false,
         subgroup ="ATF-selling",
@@ -121,7 +121,7 @@ extend({
         type ="recipe",
         name ="ATF-sell-heavy",
         category ="ATF-trade",
-        icon ="__Atlas_ATF__/graphics/trade/selling/box-heavy.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/selling/box-heavy.png",
         icon_size = 64,
         allow_as_intermediate = false,
         subgroup ="ATF-selling",
@@ -143,7 +143,7 @@ extend({
         type ="recipe",
         name ="ATF-sell-gold",
         category ="ATF-trade",
-        icon ="__Atlas_ATF__/graphics/trade/selling/sell-gold.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/selling/sell-gold.png",
         icon_size = 64,
         allow_as_intermediate = false,
         subgroup ="ATF-selling",
@@ -165,7 +165,7 @@ extend({
         type ="recipe",
         name ="ATF-sell-gembox",
         category ="ATF-trade",
-        icon ="__Atlas_ATF__/graphics/trade/selling/sell-gem.png",
+        icon ="__ATFELPNRMZ__/graphics/trade/selling/sell-gem.png",
         icon_size = 64,
         allow_as_intermediate = false,
         subgroup ="ATF-selling",

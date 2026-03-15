@@ -3,17 +3,17 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-data:data:extend({
+data:extend({
     -- =========================================================================
     -- 762x39: Стандартный винтовочный патрон (АК-47, АКМ)
     -- =========================================================================
     {
         type ="ammo",
         name ="762x39",
-        icon ="__Atlas_ATF__/graphics/ammo/762x39.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/762x39.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="762x39",
         ammo_type = {
             category ="762x39",
@@ -50,10 +50,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="762x39drum",
-        icon ="__Atlas_ATF__/graphics/ammo/762x39drum.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/762x39drum.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="762x39",
         ammo_type = {
             category ="762x39",

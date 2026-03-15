@@ -3,17 +3,17 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-data:data:extend({
+data:extend({
     -- =========================================================================
     -- 556x45: Стандартный винтовочный патрон (NATO)
     -- =========================================================================
     {
         type ="ammo",
         name ="556x45",
-        icon ="__Atlas_ATF__/graphics/ammo/556x45.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/556x45.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="556x45",
         ammo_type = {
             category ="556x45",
@@ -50,10 +50,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="556x45drum",
-        icon ="__Atlas_ATF__/graphics/ammo/556drum.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/556drum.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="556x45",
         ammo_type = {
             category ="556x45",
@@ -94,10 +94,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="556-swatt",
-        icon ="__Atlas_ATF__/graphics/ammo/swatt-mag.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/swatt-mag.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="556-swatt",
         ammo_type = {
             category ="556-swatt",
@@ -134,10 +134,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="556belt",
-        icon ="__Atlas_ATF__/graphics/ammo/556belt.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/556belt.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="556belt",
         ammo_type = {
             category ="556belt",

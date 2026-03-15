@@ -3,17 +3,17 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-data:data:extend({
+data:extend({
     -- =========================================================================
     -- 303ammo: Стандартный винтовочный патрон (.303 British)
     -- =========================================================================
     {
         type ="ammo",
         name ="303ammo",
-        icon ="__Atlas_ATF__/graphics/ammo/303.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/303.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="303ammo",
         ammo_type = {
             category ="303ammo",
@@ -50,10 +50,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="303mag",
-        icon ="__Atlas_ATF__/graphics/ammo/303mag.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/303mag.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="303ammo",
         ammo_type = {
             category ="303ammo",

@@ -3,7 +3,7 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-extend({
+data:extend({
     -- =========================================================================
     -- fusion-laser: Лазерный луч Fusion (высокоэнергетический)
     -- =========================================================================
@@ -34,7 +34,7 @@ extend({
         },
         light = {intensity = 1, size = 8},
         animation = {
-            filename ="__Atlas_ATF__/graphics/projectiles/beam/fusion-laser.png",
+            filename ="__ATFELPNRMZ__/graphics/projectiles/beam/fusion-laser.png",
             draw_as_glow = true,
             frame_count = 1,
             height = 50,

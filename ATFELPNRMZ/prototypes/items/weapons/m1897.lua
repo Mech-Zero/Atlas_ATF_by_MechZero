@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="m1897",
-        icon ="__Atlas_ATF__/graphics/weapons/m1897.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/m1897.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="oldarms",
         order ="a[m1897]",
         attack_parameters = {
@@ -36,7 +36,7 @@ data:extend({
             range = 22,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/m1897.ogg",
+                    filename ="__ATFELPNRMZ__/sound/m1897.ogg",
                     volume = 0.8
                 }
             }

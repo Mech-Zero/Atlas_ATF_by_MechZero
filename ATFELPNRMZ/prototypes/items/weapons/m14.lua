@@ -1,4 +1,4 @@
-data:data:extend
+data:extend
 ({
 -- stg44
   {
@@ -6,7 +6,7 @@ data:data:extend
  icon_size = 128, 
 
     name ="m14",
-    icon ="__Atlas_ATF__/graphics/weapons/m14.png",
+    icon ="__ATFELPNRMZ__/graphics/weapons/m14.png",
     
     subgroup ="coldwararms",
     order ="a[m14]",
@@ -33,7 +33,7 @@ data:data:extend
 			 	 sound =
 		 	 {
 		 	    {
-		 	      filename ="__Atlas_ATF__/sound/g43.ogg",
+		 	      filename ="__ATFELPNRMZ__/sound/g43.ogg",
 		   	    volume = 0.5
 		 	    }
 		   }

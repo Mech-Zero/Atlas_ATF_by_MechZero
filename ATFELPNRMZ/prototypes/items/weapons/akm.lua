@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="akm",
-        icon ="__Atlas_ATF__/graphics/weapons/akm.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/akm.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="coldwararms",
         order ="a[akm]",
         attack_parameters = {
@@ -36,7 +36,7 @@ data:extend({
             range = 25,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/ak74m.ogg",
+                    filename ="__ATFELPNRMZ__/sound/ak74m.ogg",
                     volume = 1.0
                 }
             }

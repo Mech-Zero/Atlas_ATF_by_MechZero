@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="p60",
-        icon ="__Atlas_ATF__/graphics/weapons/luger60.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/luger60.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="conceptarms",
         order ="a[p60]",
         attack_parameters = {
@@ -36,7 +36,7 @@ data:extend({
             range = 18,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/p08.ogg",
+                    filename ="__ATFELPNRMZ__/sound/p08.ogg",
                     volume = 0.5
                 }
             }

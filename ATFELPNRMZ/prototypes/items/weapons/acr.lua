@@ -1,4 +1,4 @@
-data:data:extend
+data:extend
 ({
 -- acr 6.8
   {
@@ -6,7 +6,7 @@ data:data:extend
  icon_size = 128, 
 
     name ="acr",
-    icon ="__Atlas_ATF__/graphics/weapons/acr.png",
+    icon ="__ATFELPNRMZ__/graphics/weapons/acr.png",
     
     subgroup ="modernarms",
     order ="a[acr]",
@@ -33,7 +33,7 @@ data:data:extend
 			 	 sound =
 		 	 {
 		 	    {
-		 	      filename ="__Atlas_ATF__/sound/hk416.ogg",
+		 	      filename ="__ATFELPNRMZ__/sound/hk416.ogg",
 		   	    volume = 0.5
 		 	    }
 		   }

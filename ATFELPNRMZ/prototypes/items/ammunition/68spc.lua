@@ -3,17 +3,17 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-data:data:extend({
+data:extend({
     -- =========================================================================
     -- 68spc: Стандартный винтовочный патрон
     -- =========================================================================
     {
         type ="ammo",
         name ="68spc",
-        icon ="__Atlas_ATF__/graphics/ammo/68spc.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/68spc.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="68spc",
         ammo_type = {
             category ="68spc",
@@ -50,10 +50,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="68spcdrum",
-        icon ="__Atlas_ATF__/graphics/ammo/68spcdrum.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/68spcdrum.png",
         icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="68spc",
         ammo_type = {
             category ="68spc",

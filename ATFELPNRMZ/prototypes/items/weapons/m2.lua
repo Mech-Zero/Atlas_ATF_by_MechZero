@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="m2",
-        icon ="__Atlas_ATF__/graphics/weapons/m2.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/m2.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="modernarms",
         order ="a[m2]",
         attack_parameters = {
@@ -37,20 +37,20 @@ data:extend({
             cyclic_sound = {
                 begin_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__ATFELPNRMZ__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }
                 },
                 middle_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/m2.ogg",
+                        filename ="__ATFELPNRMZ__/sound/m2.ogg",
                         volume = 0.9
                     }
                 },
                 end_sound = {
                     {
-                        filename ="__Atlas_ATF__/sound/empty.ogg",
+                        filename ="__ATFELPNRMZ__/sound/empty.ogg",
                         volume = 0,
                         speed = 1000.0
                     }

@@ -3,17 +3,17 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-data:data:extend({
+data:extend({
     -- =========================================================================
     -- 20mm: Стандартный бронебойный патрон (пушка GAU)
     -- =========================================================================
     {
         type ="ammo",
         name ="20mm",
-        icon ="__Atlas_ATF__/graphics/ammo/20mm.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/20mm.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="20mm",
         ammo_type = {
             category ="20mm",
@@ -48,10 +48,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="20mm-he",
-        icon ="__Atlas_ATF__/graphics/ammo/20mm-he.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/20mm-he.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="20mm",
         ammo_type = {
             category ="20mm",

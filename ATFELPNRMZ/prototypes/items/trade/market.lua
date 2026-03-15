@@ -27,10 +27,10 @@ data:extend({
     {
         type ="item",
         name ="ATF-market",
-        icon ="__Atlas_ATF__/graphics/entities/market.png",
+        icon ="__ATFELPNRMZ__/graphics/entities/market.png",
         icon_size = 256,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="ATF-market",
         order ="a[ATF-market]",
         place_result ="ATF-market",

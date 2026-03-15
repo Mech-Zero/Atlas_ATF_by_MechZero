@@ -10,10 +10,10 @@ data:extend({
     {
         type ="ammo",
         name ="ATF-fusion-battery",
-        icon ="__Atlas_ATF__/graphics/ammo/fusion-battery.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/fusion-battery.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="fusion-battery",
         ammo_type = {
             category ="fusion-battery",

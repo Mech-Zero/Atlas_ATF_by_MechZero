@@ -1,6 +1,6 @@
 -- data.lua
 -- ATFELPN Main Data Loading Script
--- Версия: 1.0.7 (Rebalance by Mechromancer-Zero)
+-- Версия: 1.0.7 (Rebalance by MechromancerZero)
 -- Интеграция: Bob's Warfare Compatibility
 -- Factorio Version: 2.0+
 
@@ -18,16 +18,20 @@ log("[ATF-Data] ================================================")
 -- ВСПОМОГАТЕЛЬНАЯ ФУНКЦИЯ ДЛЯ БЕЗОПАСНОЙ ЗАГРУЗКИ
 -- ===========================================================================
 
+-- Сохраняем оригинальный require перед переопределением
+local original_require = require
+
 local function safe_require(path, description)
     local success, err = pcall(function()
-        require(path)
+        original_require(path)  -- ← Используем оригинальный require!
     end)
     
+    local desc = description or path  -- ← Защита от nil
     if success then
-        log("[ATF-Data] ✓ Loaded:" .. description .." (" .. path ..")")
+        log("[ATF-Data] ✓ Loaded: " .. desc .. " (" .. path .. ")")
     else
-        log("[ATF-Data] ✗ Failed:" .. description .." (" .. path ..")")
-        log("[ATF-Data] Error:" .. tostring(err))
+        log("[ATF-Data] ✗ Failed: " .. desc .. " (" .. path .. ")")
+        log("[ATF-Data] Error: " .. tostring(err))
     end
     
     return success
@@ -38,35 +42,13 @@ end
 -- ===========================================================================
 
 log("[ATF-Data] Loading core prototypes...")
-require("prototypes.grps")
-require("prototypes.functions")
-require("prototypes.items")
-require("prototypes.custom-ammo")
-require("prototypes.turrets")
-require("prototypes.entities.effects")
-require("prototypes.recipes.ammo")
-require("prototypes.recipes.ammo-2")
-require("prototypes.recipes.armor")
-require("prototypes.recipes.weapons-1")
-require("prototypes.recipes.weapons-2")
-require("prototypes.recipes.components")
-require("prototypes.recipes.components-2")
-require("prototypes.recipes.drone-recipes")
-require("prototypes.recipes.turret-recipes")
-require("prototypes.recipes.bundles")
-require("prototypes.recipes.selling")
-require("prototypes.recipes.buying")
-require("prototypes.recipes.market")
-require("prototypes.drones")
-require("prototypes.autoplace-controls")
-require("prototypes.tech")
--- safe_require("prototypes.damage-types","Damage Types") -- Отключено автором
-safe_require("prototypes.grps","Item Groups")
-safe_require("prototypes.functions","Helper Functions")
-safe_require("prototypes.items","Items")
-safe_require("prototypes.custom-ammo","Custom Ammo Categories")
-safe_require("prototypes.turrets","Turrets")
-safe_require("prototypes.entities.effects","Entity Effects")
+
+safe_require("prototypes.grps", "Item Groups")
+safe_require("prototypes.functions", "Helper Functions")
+safe_require("prototypes.items", "Items")
+safe_require("prototypes.custom-ammo", "Custom Ammo Categories")
+safe_require("prototypes.turrets", "Turrets")
+safe_require("prototypes.entities.effects", "Entity Effects")
 
 -- ===========================================================================
 -- РЕЦЕПТЫ (Обязательные)
@@ -74,21 +56,19 @@ safe_require("prototypes.entities.effects","Entity Effects")
 
 log("[ATF-Data] Loading recipes...")
 
-safe_require("prototypes.recipes.ammo","Ammo Recipes (Part 1)")
-safe_require("prototypes.recipes.ammo-2","Ammo Recipes (Part 2)")
-safe_require("prototypes.recipes.armor","Armor Recipes")
-safe_require("prototypes.recipes.weapons-1","Weapon Recipes (Part 1)")
-safe_require("prototypes.recipes.weapons-2","Weapon Recipes (Part 2)")
-safe_require("prototypes.recipes.components","Component Recipes (Part 1)")
-safe_require("prototypes.recipes.components-2","Component Recipes (Part 2)")
-safe_require("prototypes.recipes.drone-recipes","Drone Recipes")
-safe_require("prototypes.recipes.turret-recipes","Turret Recipes")
-safe_require("prototypes.recipes.bundles","Bundle Box Recipes")
-safe_require("prototypes.recipes.selling","Selling Recipes")
-safe_require("prototypes.recipes.buying","Buying Recipes")
-safe_require("prototypes.recipes.market","Market Recipes")
-
--- safe_require("prototypes.recipe-override","Recipe Overrides") -- Отключено автором
+safe_require("prototypes.recipes.ammo", "Ammo Recipes (Part 1)")
+safe_require("prototypes.recipes.ammo-2", "Ammo Recipes (Part 2)")
+safe_require("prototypes.recipes.armor", "Armor Recipes")
+safe_require("prototypes.recipes.weapons-1", "Weapon Recipes (Part 1)")
+safe_require("prototypes.recipes.weapons-2", "Weapon Recipes (Part 2)")
+safe_require("prototypes.recipes.components", "Component Recipes (Part 1)")
+safe_require("prototypes.recipes.components-2", "Component Recipes (Part 2)")
+safe_require("prototypes.recipes.drone-recipes", "Drone Recipes")
+safe_require("prototypes.recipes.turret-recipes", "Turret Recipes")
+safe_require("prototypes.recipes.bundles", "Bundle Box Recipes")
+safe_require("prototypes.recipes.selling", "Selling Recipes")
+safe_require("prototypes.recipes.buying", "Buying Recipes")
+safe_require("prototypes.recipes.market", "Market Recipes")
 
 -- ===========================================================================
 -- СУЩНОСТИ И МИР
@@ -96,9 +76,9 @@ safe_require("prototypes.recipes.market","Market Recipes")
 
 log("[ATF-Data] Loading entities and world...")
 
-safe_require("prototypes.drones","Drones")
-safe_require("prototypes.autoplace-controls","Autoplace Controls")
-safe_require("prototypes.tech","Technologies")
+safe_require("prototypes.drones", "Drones")
+safe_require("prototypes.autoplace-controls", "Autoplace Controls")
+safe_require("prototypes.tech", "Technologies")
 
 -- ===========================================================================
 -- ОПЦИОНАЛЬНЫЕ ФАЙЛЫ (Отключено автором)
@@ -106,10 +86,10 @@ safe_require("prototypes.tech","Technologies")
 
 log("[ATF-Data] Optional files (disabled by author)...")
 
--- safe_require("prototypes.allow_productivity","Productivity Module Support")
--- safe_require("prototypes.achievements","Achievements")
--- safe_require("prototypes.armor-grid","Armor Grid")
--- safe_require("prototypes.ammo-category","Ammo Category Definitions")
+-- safe_require("prototypes.allow_productivity", "Productivity Module Support")
+-- safe_require("prototypes.achievements", "Achievements")
+-- safe_require("prototypes.armor-grid", "Armor Grid")
+-- safe_require("prototypes.ammo-category", "Ammo Category Definitions")
 
 -- ===========================================================================
 -- ПРОВЕРКА СОВМЕСТИМОСТИ С МОДАМИ

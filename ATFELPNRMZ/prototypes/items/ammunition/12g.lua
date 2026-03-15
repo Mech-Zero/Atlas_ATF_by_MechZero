@@ -3,17 +3,17 @@
 -- Версия: 1.1 (Rebalance by Mechromancer-Zero)
 -- Интеграция: Bob's Warfare Compatibility
 
-data:data:extend({
+data:extend({
     -- =========================================================================
     -- 12g-buckshot: Дробь (стандартный дробовой патрон)
     -- =========================================================================
     {
         type ="ammo",
         name ="12g-buckshot",
-        icon ="__Atlas_ATF__/graphics/ammo/buckshot.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/buckshot.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="shotgun-shell",
         ammo_type = {
             category ="shotgun-shell",
@@ -59,10 +59,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="12g-slug",
-        icon ="__Atlas_ATF__/graphics/ammo/slug.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/slug.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="shotgun-shell",
         ammo_type = {
             category ="shotgun-shell",
@@ -107,10 +107,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="12g-frag",
-        icon ="__Atlas_ATF__/graphics/ammo/fragshot.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/fragshot.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="shotgun-shell",
         ammo_type = {
             category ="shotgun-shell",
@@ -156,10 +156,10 @@ data:data:extend({
     {
         type ="ammo",
         name ="12g-dragon",
-        icon ="__Atlas_ATF__/graphics/ammo/dragonsbreath.png",
+        icon ="__ATFELPNRMZ__/graphics/ammo/dragonsbreath.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         ammo_category ="shotgun-shell",
         ammo_type = {
             category ="shotgun-shell",

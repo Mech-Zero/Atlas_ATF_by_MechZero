@@ -21,7 +21,7 @@ data:extend({
     {
         type ="resource",
         name ="nitra",
-        icon ="__Atlas_ATF__/graphics/ores/nitra-ore.png",
+        icon ="__ATFELPNRMZ__/graphics/ores/nitra-ore.png",
         icon_size = 32,
         flags = {"placeable-neutral"},
         order ="a-b-h",
@@ -65,7 +65,7 @@ data:extend({
         stage_counts = {5000, 3000, 1500, 800, 400, 100, 50, 10},
         stages = {
             sheet = {
-                filename ="__Atlas_ATF__/graphics/ores/nitra.png",  -- ИСПРАВЛЕНО: было cinnabar.png
+                filename ="__ATFELPNRMZ__/graphics/ores/nitra.png",  -- ИСПРАВЛЕНО: было cinnabar.png
                 priority ="extra-high",
                 width = 64,
                 height = 64,
@@ -73,7 +73,7 @@ data:extend({
                 variation_count = 8,
                 scale = 0.5,
                 hr_version = {
-                    filename ="__Atlas_ATF__/graphics/ores/hr-nitra.png",  -- ИСПРАВЛЕНО: было hr-cinnabar.png
+                    filename ="__ATFELPNRMZ__/graphics/ores/hr-nitra.png",  -- ИСПРАВЛЕНО: было hr-cinnabar.png
                     priority ="extra-high",
                     width = 128,
                     height = 128,

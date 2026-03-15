@@ -10,10 +10,10 @@ data:extend({
     {
         type ="gun",
         name ="hk416",
-        icon ="__Atlas_ATF__/graphics/weapons/416.png",
+        icon ="__ATFELPNRMZ__/graphics/weapons/416.png",
         icon_size = 128,
         icon_mipmaps = 4,
-        flags = {"item"},
+        -- flags = {"item"},
         subgroup ="modernarms",
         order ="a[hk416]",
         attack_parameters = {
@@ -36,7 +36,7 @@ data:extend({
             range = 28,
             sound = {
                 {
-                    filename ="__Atlas_ATF__/sound/hk416.ogg",
+                    filename ="__ATFELPNRMZ__/sound/hk416.ogg",
                     volume = 0.6
                 }
             }

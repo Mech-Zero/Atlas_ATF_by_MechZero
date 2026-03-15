@@ -20,7 +20,7 @@ if not mods["bobores"] then
             name ="cinnabar",
             richness = true,
             order ="b-g",
-            icon ="__Atlas_ATF__/graphics/items/cinnabar.png",
+            icon ="__ATFELPNRMZ__/graphics/items/cinnabar.png",
             icon_size = 64
         }
     })
